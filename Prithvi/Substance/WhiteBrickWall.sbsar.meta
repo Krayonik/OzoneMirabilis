@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: cbb781221cd858642af8ab511ac6cac7
-timeCreated: 1457984973
+timeCreated: 1458239679
 licenseType: Free
 SubstanceImporter:
   serializedVersion: 5
@@ -23,7 +23,7 @@ SubstanceImporter:
     materialInformation:
       serializedVersion: 5
       offset: {x: 0, y: 0}
-      scale: {x: 50, y: 50}
+      scale: {x: 20, y: 20}
       generateMipmaps: 1
       generateAllOutputs: 0
       animationUpdateRate: 42
@@ -35,14 +35,14 @@ SubstanceImporter:
             name: _MainTex
           second:
             texture: {instanceID: 0}
-            scale: {x: 50, y: 50}
+            scale: {x: 20, y: 20}
             offset: {x: 0, y: 0}
         data:
           first:
             name: _BumpMap
           second:
             texture: {instanceID: 0}
-            scale: {x: 50, y: 5}
+            scale: {x: 20, y: 2}
             offset: {x: 0, y: 0}
         data:
           first:
@@ -50,6 +50,13 @@ SubstanceImporter:
           second:
             texture: {instanceID: 0}
             scale: {x: 1, y: 1}
+            offset: {x: 0, y: 0}
+        data:
+          first:
+            name: _MetallicGlossMap
+          second:
+            texture: {instanceID: 0}
+            scale: {x: 20, y: 2}
             offset: {x: 0, y: 0}
         data:
           first:
@@ -70,7 +77,7 @@ SubstanceImporter:
             name: _EmissionMap
           second:
             texture: {instanceID: 0}
-            scale: {x: 50, y: 50}
+            scale: {x: 20, y: 20}
             offset: {x: 0, y: 0}
         data:
           first:
@@ -86,13 +93,6 @@ SubstanceImporter:
             texture: {instanceID: 0}
             scale: {x: 1, y: 1}
             offset: {x: 0, y: 0}
-        data:
-          first:
-            name: _MetallicGlossMap
-          second:
-            texture: {instanceID: 0}
-            scale: {x: 50, y: 5}
-            offset: {x: 0, y: 0}
       floats:
         data:
           first:
@@ -106,10 +106,6 @@ SubstanceImporter:
           first:
             name: _Cutoff
           second: 0.5
-        data:
-          first:
-            name: _Metallic
-          second: 0
         data:
           first:
             name: _Parallax
@@ -141,6 +137,10 @@ SubstanceImporter:
         data:
           first:
             name: _Mode
+          second: 0
+        data:
+          first:
+            name: _Metallic
           second: 0
       colors:
         data:

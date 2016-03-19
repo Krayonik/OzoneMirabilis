@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 8920c9f79fae5fd46a5df6d413814abb
-timeCreated: 1457986361
+timeCreated: 1458246869
 licenseType: Free
 SubstanceImporter:
   serializedVersion: 5
@@ -203,7 +203,7 @@ SubstanceImporter:
             name: _BumpMap
           second:
             texture: {instanceID: 0}
-            scale: {x: 30, y: 30}
+            scale: {x: 30, y: 3}
             offset: {x: 0, y: 0}
         data:
           first:
@@ -214,17 +214,24 @@ SubstanceImporter:
             offset: {x: 0, y: 0}
         data:
           first:
+            name: _MetallicGlossMap
+          second:
+            texture: {instanceID: 0}
+            scale: {x: 30, y: 3}
+            offset: {x: 0, y: 0}
+        data:
+          first:
             name: _ParallaxMap
           second:
             texture: {instanceID: 0}
-            scale: {x: 30, y: 30}
+            scale: {x: 30, y: 3}
             offset: {x: 0, y: 0}
         data:
           first:
             name: _OcclusionMap
           second:
             texture: {instanceID: 0}
-            scale: {x: 30, y: 30}
+            scale: {x: 30, y: 3}
             offset: {x: 0, y: 0}
         data:
           first:
@@ -247,13 +254,6 @@ SubstanceImporter:
             texture: {instanceID: 0}
             scale: {x: 1, y: 1}
             offset: {x: 0, y: 0}
-        data:
-          first:
-            name: _MetallicGlossMap
-          second:
-            texture: {instanceID: 0}
-            scale: {x: 30, y: 30}
-            offset: {x: 0, y: 0}
       floats:
         data:
           first:
@@ -267,10 +267,6 @@ SubstanceImporter:
           first:
             name: _Cutoff
           second: 0.5
-        data:
-          first:
-            name: _Metallic
-          second: 0
         data:
           first:
             name: _Parallax
@@ -302,6 +298,10 @@ SubstanceImporter:
         data:
           first:
             name: _Mode
+          second: 0
+        data:
+          first:
+            name: _Metallic
           second: 0
       colors:
         data:
@@ -348,6 +348,10 @@ SubstanceImporter:
       material: {instanceID: 0}
       baseUID: 1848177007
     - shaderProp:
+        name: _MetallicGlossMap
+      material: {instanceID: 0}
+      baseUID: 1848176999
+    - shaderProp:
         name: _ParallaxMap
       material: {instanceID: 0}
       baseUID: 1848176995
@@ -355,10 +359,6 @@ SubstanceImporter:
         name: _OcclusionMap
       material: {instanceID: 0}
       baseUID: 1848176993
-    - shaderProp:
-        name: _MetallicGlossMap
-      material: {instanceID: 0}
-      baseUID: 1848176999
     buildTargetSettings:
     - serializedVersion: 2
       buildTarget: 
