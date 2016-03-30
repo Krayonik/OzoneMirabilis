@@ -1,0 +1,361 @@
+fileFormatVersion: 2
+guid: 174512cee017fc64cb6f9f461190d29d
+timeCreated: 1459359942
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: OM_Gfloor_Arch_design_Pillars
+    100002: OM_Gfloor_Arch_design_Top
+    100004: OM_Gfloor_Car_Pathway
+    100006: OM_Gfloor_Car_Pathway 1
+    100008: OM_Gfloor_Compound
+    100010: OM_Gfloor_Compound_n_Arch
+    100012: OM_Gfloor_Corner_design_Bottom
+    100014: OM_Gfloor_Corner_design_top
+    100016: OM_Gfloor_Elevater_Lobby
+    100018: OM_Gfloor_Footpath
+    100020: OM_Gfloor_Footpath 1
+    100022: OM_Gfloor_Front_steps
+    100024: OM_Gfloor_Garden_Area
+    100026: OM_Gfloor_Garden_Area 1
+    100028: OM_Gfloor_Garden_plants
+    100030: OM_Gfloor_Glass
+    100032: OM_Gfloor_Glass_02
+    100034: OM_Gfloor_Glass_Frame
+    100036: OM_Gfloor_Gym_Area_Center_Design
+    100038: OM_Gfloor_Gym_Area_mirror_01
+    100040: OM_Gfloor_Gym_Area_mirror_02
+    100042: OM_Gfloor_Gym_carpet
+    100044: OM_Gfloor_Gym_Main_Lobby
+    100046: OM_Gfloor_Lobby_Black_Design
+    100048: OM_Gfloor_Lobby_Metal
+    100050: OM_Gfloor_Lobby_Metal_02
+    100052: OM_Gfloor_Lobby_Roof_01
+    100054: OM_Gfloor_Lobby_Roof_02
+    100056: OM_Gfloor_Lobby_Roof_03
+    100058: OM_Gfloor_Lobby_Roof_04
+    100060: OM_Gfloor_Lobby_Wood
+    100062: OM_Gfloor_Lobby_Wood_02
+    100064: OM_Gfloor_Lobby_wood_design
+    100066: OM_Gfloor_Lobby_Wood_Door
+    100068: OM_Gfloor_Lobby_Wood_Door_02
+    100070: OM_Gfloor_Lobby_World_Map
+    100072: OM_Gfloor_Lobby_World_Map 1
+    100074: OM_Gfloor_Main_Floor
+    100076: OM_Gfloor_Main_Floor 1
+    100078: OM_Gfloor_Main_roof
+    100080: OM_Gfloor_Main_Wall
+    100082: OM_Gfloor_Main_Wall 1
+    100084: OM_Gfloor_Mini_theater
+    100086: OM_Gfloor_Mini_theater_Floor_01
+    100088: OM_Gfloor_Mini_theater_Floor_02
+    100090: OM_Gfloor_Mini_theater_Front_table
+    100092: OM_Gfloor_Mini_theater_Roof_01
+    100094: OM_Gfloor_Mini_theater_Roof_02
+    100096: OM_Gfloor_Mini_theater_Screen
+    100098: OM_Gfloor_Mini_theater_Side_panal
+    100100: OM_Gfloor_Mirabils_Text
+    100102: OM_Gfloor_Mirabils_Text 1
+    100104: OM_Gfloor_Outer_Ground
+    100106: OM_Gfloor_Outer_Ground 1
+    100108: OM_Gfloor_Outer_Road
+    100110: OM_Gfloor_Outer_Road 1
+    100112: OM_Gfloor_Pillars
+    100114: OM_Gfloor_Roof
+    100116: OM_Gfloor_Roof_Design
+    100118: OM_Gfloor_Squash_n_wood_Skerting
+    100120: OM_Gfloor_Wall_Pillars
+    100122: OM_Gfloor_Window_Glass
+    100124: OM_Gfloor_Window_Metal_beading
+    100126: OM_Gfloor_Windows_n_Pillars
+    100128: OM_Gfloor_Wood
+    100130: //RootNode
+    100132: Roof_Cover
+    100134: Roof_Cover 1
+    400000: OM_Gfloor_Arch_design_Pillars
+    400002: OM_Gfloor_Arch_design_Top
+    400004: OM_Gfloor_Car_Pathway
+    400006: OM_Gfloor_Car_Pathway 1
+    400008: OM_Gfloor_Compound
+    400010: OM_Gfloor_Compound_n_Arch
+    400012: OM_Gfloor_Corner_design_Bottom
+    400014: OM_Gfloor_Corner_design_top
+    400016: OM_Gfloor_Elevater_Lobby
+    400018: OM_Gfloor_Footpath
+    400020: OM_Gfloor_Footpath 1
+    400022: OM_Gfloor_Front_steps
+    400024: OM_Gfloor_Garden_Area
+    400026: OM_Gfloor_Garden_Area 1
+    400028: OM_Gfloor_Garden_plants
+    400030: OM_Gfloor_Glass
+    400032: OM_Gfloor_Glass_02
+    400034: OM_Gfloor_Glass_Frame
+    400036: OM_Gfloor_Gym_Area_Center_Design
+    400038: OM_Gfloor_Gym_Area_mirror_01
+    400040: OM_Gfloor_Gym_Area_mirror_02
+    400042: OM_Gfloor_Gym_carpet
+    400044: OM_Gfloor_Gym_Main_Lobby
+    400046: OM_Gfloor_Lobby_Black_Design
+    400048: OM_Gfloor_Lobby_Metal
+    400050: OM_Gfloor_Lobby_Metal_02
+    400052: OM_Gfloor_Lobby_Roof_01
+    400054: OM_Gfloor_Lobby_Roof_02
+    400056: OM_Gfloor_Lobby_Roof_03
+    400058: OM_Gfloor_Lobby_Roof_04
+    400060: OM_Gfloor_Lobby_Wood
+    400062: OM_Gfloor_Lobby_Wood_02
+    400064: OM_Gfloor_Lobby_wood_design
+    400066: OM_Gfloor_Lobby_Wood_Door
+    400068: OM_Gfloor_Lobby_Wood_Door_02
+    400070: OM_Gfloor_Lobby_World_Map
+    400072: OM_Gfloor_Lobby_World_Map 1
+    400074: OM_Gfloor_Main_Floor
+    400076: OM_Gfloor_Main_Floor 1
+    400078: OM_Gfloor_Main_roof
+    400080: OM_Gfloor_Main_Wall
+    400082: OM_Gfloor_Main_Wall 1
+    400084: OM_Gfloor_Mini_theater
+    400086: OM_Gfloor_Mini_theater_Floor_01
+    400088: OM_Gfloor_Mini_theater_Floor_02
+    400090: OM_Gfloor_Mini_theater_Front_table
+    400092: OM_Gfloor_Mini_theater_Roof_01
+    400094: OM_Gfloor_Mini_theater_Roof_02
+    400096: OM_Gfloor_Mini_theater_Screen
+    400098: OM_Gfloor_Mini_theater_Side_panal
+    400100: OM_Gfloor_Mirabils_Text
+    400102: OM_Gfloor_Mirabils_Text 1
+    400104: OM_Gfloor_Outer_Ground
+    400106: OM_Gfloor_Outer_Ground 1
+    400108: OM_Gfloor_Outer_Road
+    400110: OM_Gfloor_Outer_Road 1
+    400112: OM_Gfloor_Pillars
+    400114: OM_Gfloor_Roof
+    400116: OM_Gfloor_Roof_Design
+    400118: OM_Gfloor_Squash_n_wood_Skerting
+    400120: OM_Gfloor_Wall_Pillars
+    400122: OM_Gfloor_Window_Glass
+    400124: OM_Gfloor_Window_Metal_beading
+    400126: OM_Gfloor_Windows_n_Pillars
+    400128: OM_Gfloor_Wood
+    400130: //RootNode
+    400132: Roof_Cover
+    400134: Roof_Cover 1
+    2300000: OM_Gfloor_Arch_design_Pillars
+    2300002: OM_Gfloor_Arch_design_Top
+    2300004: OM_Gfloor_Car_Pathway 1
+    2300006: OM_Gfloor_Compound
+    2300008: OM_Gfloor_Corner_design_Bottom
+    2300010: OM_Gfloor_Corner_design_top
+    2300012: OM_Gfloor_Footpath 1
+    2300014: OM_Gfloor_Front_steps
+    2300016: OM_Gfloor_Garden_Area 1
+    2300018: OM_Gfloor_Garden_plants
+    2300020: OM_Gfloor_Glass
+    2300022: OM_Gfloor_Glass_02
+    2300024: OM_Gfloor_Glass_Frame
+    2300026: OM_Gfloor_Gym_Area_Center_Design
+    2300028: OM_Gfloor_Gym_Area_mirror_01
+    2300030: OM_Gfloor_Gym_Area_mirror_02
+    2300032: OM_Gfloor_Gym_carpet
+    2300034: OM_Gfloor_Lobby_Black_Design
+    2300036: OM_Gfloor_Lobby_Metal
+    2300038: OM_Gfloor_Lobby_Metal_02
+    2300040: OM_Gfloor_Lobby_Roof_01
+    2300042: OM_Gfloor_Lobby_Roof_02
+    2300044: OM_Gfloor_Lobby_Roof_03
+    2300046: OM_Gfloor_Lobby_Roof_04
+    2300048: OM_Gfloor_Lobby_Wood
+    2300050: OM_Gfloor_Lobby_Wood_02
+    2300052: OM_Gfloor_Lobby_wood_design
+    2300054: OM_Gfloor_Lobby_Wood_Door
+    2300056: OM_Gfloor_Lobby_Wood_Door_02
+    2300058: OM_Gfloor_Lobby_World_Map 1
+    2300060: OM_Gfloor_Main_Floor 1
+    2300062: OM_Gfloor_Main_Wall 1
+    2300064: OM_Gfloor_Mini_theater_Floor_01
+    2300066: OM_Gfloor_Mini_theater_Floor_02
+    2300068: OM_Gfloor_Mini_theater_Front_table
+    2300070: OM_Gfloor_Mini_theater_Roof_01
+    2300072: OM_Gfloor_Mini_theater_Roof_02
+    2300074: OM_Gfloor_Mini_theater_Screen
+    2300076: OM_Gfloor_Mini_theater_Side_panal
+    2300078: OM_Gfloor_Mirabils_Text 1
+    2300080: OM_Gfloor_Outer_Ground 1
+    2300082: OM_Gfloor_Outer_Road 1
+    2300084: OM_Gfloor_Pillars
+    2300086: OM_Gfloor_Roof
+    2300088: OM_Gfloor_Roof_Design
+    2300090: OM_Gfloor_Squash_n_wood_Skerting
+    2300092: OM_Gfloor_Wall_Pillars
+    2300094: OM_Gfloor_Window_Glass
+    2300096: OM_Gfloor_Window_Metal_beading
+    2300098: OM_Gfloor_Wood
+    2300100: Roof_Cover 1
+    3300000: OM_Gfloor_Arch_design_Pillars
+    3300002: OM_Gfloor_Arch_design_Top
+    3300004: OM_Gfloor_Car_Pathway 1
+    3300006: OM_Gfloor_Compound
+    3300008: OM_Gfloor_Corner_design_Bottom
+    3300010: OM_Gfloor_Corner_design_top
+    3300012: OM_Gfloor_Footpath 1
+    3300014: OM_Gfloor_Front_steps
+    3300016: OM_Gfloor_Garden_Area 1
+    3300018: OM_Gfloor_Garden_plants
+    3300020: OM_Gfloor_Glass
+    3300022: OM_Gfloor_Glass_02
+    3300024: OM_Gfloor_Glass_Frame
+    3300026: OM_Gfloor_Gym_Area_Center_Design
+    3300028: OM_Gfloor_Gym_Area_mirror_01
+    3300030: OM_Gfloor_Gym_Area_mirror_02
+    3300032: OM_Gfloor_Gym_carpet
+    3300034: OM_Gfloor_Lobby_Black_Design
+    3300036: OM_Gfloor_Lobby_Metal
+    3300038: OM_Gfloor_Lobby_Metal_02
+    3300040: OM_Gfloor_Lobby_Roof_01
+    3300042: OM_Gfloor_Lobby_Roof_02
+    3300044: OM_Gfloor_Lobby_Roof_03
+    3300046: OM_Gfloor_Lobby_Roof_04
+    3300048: OM_Gfloor_Lobby_Wood
+    3300050: OM_Gfloor_Lobby_Wood_02
+    3300052: OM_Gfloor_Lobby_wood_design
+    3300054: OM_Gfloor_Lobby_Wood_Door
+    3300056: OM_Gfloor_Lobby_Wood_Door_02
+    3300058: OM_Gfloor_Lobby_World_Map 1
+    3300060: OM_Gfloor_Main_Floor 1
+    3300062: OM_Gfloor_Main_Wall 1
+    3300064: OM_Gfloor_Mini_theater_Floor_01
+    3300066: OM_Gfloor_Mini_theater_Floor_02
+    3300068: OM_Gfloor_Mini_theater_Front_table
+    3300070: OM_Gfloor_Mini_theater_Roof_01
+    3300072: OM_Gfloor_Mini_theater_Roof_02
+    3300074: OM_Gfloor_Mini_theater_Screen
+    3300076: OM_Gfloor_Mini_theater_Side_panal
+    3300078: OM_Gfloor_Mirabils_Text 1
+    3300080: OM_Gfloor_Outer_Ground 1
+    3300082: OM_Gfloor_Outer_Road 1
+    3300084: OM_Gfloor_Pillars
+    3300086: OM_Gfloor_Roof
+    3300088: OM_Gfloor_Roof_Design
+    3300090: OM_Gfloor_Squash_n_wood_Skerting
+    3300092: OM_Gfloor_Wall_Pillars
+    3300094: OM_Gfloor_Window_Glass
+    3300096: OM_Gfloor_Window_Metal_beading
+    3300098: OM_Gfloor_Wood
+    3300100: Roof_Cover 1
+    4300000: OM_Gfloor_Outer_Road
+    4300002: OM_Gfloor_Outer_Ground
+    4300004: OM_Gfloor_Wood
+    4300006: OM_Gfloor_Glass_02
+    4300008: OM_Gfloor_Wall_Pillars
+    4300010: OM_Gfloor_Glass
+    4300012: OM_Gfloor_Glass_Frame
+    4300014: OM_Gfloor_Main_Wall
+    4300016: OM_Gfloor_Squash_n_wood_Skerting
+    4300018: OM_Gfloor_Car_Pathway
+    4300020: OM_Gfloor_Garden_Area
+    4300022: OM_Gfloor_Roof
+    4300024: OM_Gfloor_Roof_Design
+    4300026: OM_Gfloor_Window_Glass
+    4300028: OM_Gfloor_Window_Metal_beading
+    4300030: OM_Gfloor_Pillars
+    4300032: OM_Gfloor_Front_steps
+    4300034: OM_Gfloor_Compound
+    4300036: OM_Gfloor_Corner_design_top
+    4300038: OM_Gfloor_Corner_design_Bottom
+    4300040: OM_Gfloor_Arch_design_Pillars
+    4300042: OM_Gfloor_Arch_design_Top
+    4300044: OM_Gfloor_Garden_plants
+    4300046: OM_Gfloor_Gym_Area_mirror_01
+    4300048: OM_Gfloor_Gym_Area_Center_Design
+    4300050: OM_Gfloor_Gym_Area_mirror_02
+    4300052: OM_Gfloor_Gym_carpet
+    4300054: OM_Gfloor_Lobby_wood_design
+    4300056: OM_Gfloor_Main_Floor
+    4300058: OM_Gfloor_Mini_theater_Side_panal
+    4300060: OM_Gfloor_Mini_theater_Front_table
+    4300062: OM_Gfloor_Mini_theater_Floor_01
+    4300064: OM_Gfloor_Mini_theater_Floor_02
+    4300066: OM_Gfloor_Mini_theater_Roof_01
+    4300068: OM_Gfloor_Mini_theater_Roof_02
+    4300070: OM_Gfloor_Mini_theater_Screen
+    4300072: OM_Gfloor_Lobby_Wood
+    4300074: OM_Gfloor_Lobby_Roof_02
+    4300076: OM_Gfloor_Lobby_Roof_01
+    4300078: OM_Gfloor_Lobby_Metal
+    4300080: OM_Gfloor_Lobby_Wood_Door
+    4300082: OM_Gfloor_Lobby_Black_Design
+    4300084: OM_Gfloor_Lobby_Roof_03
+    4300086: OM_Gfloor_Lobby_Roof_04
+    4300088: OM_Gfloor_Lobby_Wood_02
+    4300090: OM_Gfloor_Lobby_Metal_02
+    4300092: OM_Gfloor_Lobby_Wood_Door_02
+    4300094: OM_Gfloor_Lobby_World_Map
+    4300096: OM_Gfloor_Footpath
+    4300098: OM_Gfloor_Mirabils_Text
+    4300100: Roof_Cover
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
