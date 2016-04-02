@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 8e32f827164e2a345b85e19b9a1347cc
-timeCreated: 1459519814
+timeCreated: 1459605712
 licenseType: Free
 SubstanceImporter:
   serializedVersion: 5
@@ -149,7 +149,7 @@ SubstanceImporter:
     materialInformation:
       serializedVersion: 5
       offset: {x: 0, y: 0}
-      scale: {x: 15, y: 15}
+      scale: {x: 30, y: 30}
       generateMipmaps: 1
       generateAllOutputs: 0
       animationUpdateRate: 42
@@ -161,14 +161,14 @@ SubstanceImporter:
             name: _MainTex
           second:
             texture: {instanceID: 0}
-            scale: {x: 15, y: 15}
+            scale: {x: 30, y: 30}
             offset: {x: 0, y: 0}
         data:
           first:
             name: _BumpMap
           second:
             texture: {instanceID: 0}
-            scale: {x: 15, y: 1}
+            scale: {x: 30, y: 3}
             offset: {x: 0, y: 0}
         data:
           first:
@@ -182,7 +182,7 @@ SubstanceImporter:
             name: _ParallaxMap
           second:
             texture: {instanceID: 0}
-            scale: {x: 15, y: 1}
+            scale: {x: 30, y: 3}
             offset: {x: 0, y: 0}
         data:
           first:
@@ -196,7 +196,7 @@ SubstanceImporter:
             name: _EmissionMap
           second:
             texture: {instanceID: 0}
-            scale: {x: 15, y: 15}
+            scale: {x: 30, y: 30}
             offset: {x: 0, y: 0}
         data:
           first:
@@ -217,7 +217,7 @@ SubstanceImporter:
             name: _MetallicGlossMap
           second:
             texture: {instanceID: 0}
-            scale: {x: 15, y: 1}
+            scale: {x: 30, y: 3}
             offset: {x: 0, y: 0}
       floats:
         data:
