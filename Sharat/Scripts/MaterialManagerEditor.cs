@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 
-[CustomEditor(typeof(MaterialManager))]
+//[CustomEditor(typeof(MaterialManager))]
 public class MaterialManagerEditor : Editor {
 
 
@@ -76,7 +76,7 @@ public class MaterialManagerEditor : Editor {
         //RetroGroup_bool = EditorGUILayout.BeginToggleGroup("Retro Materials", RetroGroup_bool);
         EditorGUILayout.BeginToggleGroup("Retro Materials", true);
         
-        myTarget.Retro_Roof1Mat = (Material)EditorGUILayout.ObjectField("Roof Mat :", myTarget.Retro_Roof1Mat, typeof(Renderer), true);
+        //myTarget.Retro_Roof1Mat = (Material)EditorGUILayout.ObjectField("Roof Mat :", myTarget.Retro_Roof1Mat, typeof(Renderer), true);
 
         
         EditorGUILayout.PropertyField(Retro_Walls, new GUIContent("Retro Walls : "), true);
