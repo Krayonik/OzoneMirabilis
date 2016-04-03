@@ -231,6 +231,105 @@ public class MaterialManager : MonoBehaviour {
     }
 
 
+    //Wing_A_FlatNo_02_Type01
+
+    public void Wing_A_FlatNo_02_Type01_Retro()
+    {
+        Props_Retro.SetActive(true);
+        Props_Danish.SetActive(false);
+        Props_Contemp.SetActive(false);
+        foreach (var item in Retro_False_Roof)
+        {
+            item.SetActive(true);
+        }
+
+
+        Roof1.materials = Retro_Roof1;
+        Roof2.materials = Retro_Roof2;
+        Roof3.materials = Retro_Roof3;
+        //Roof4.materials = Retro_Roof4;
+        Floor.materials = Retro_Floors;
+        Wall.materials = Retro_Walls;
+        Skirting.materials = Retro_Skirting;
+
+        foreach (var item in Door_Frames)
+        {
+            item.materials = Retro_DoorFrames;
+        }
+        foreach (var item in Window_Frames)
+        {
+            item.materials = Retro_WindowFrames;
+        }
+        foreach (var item in Bathroom_Window_Frames)
+        {
+            item.materials = Retro_BathroomWindowFrames;
+        }
+
+    }
+    public void Wing_A_FlatNo_02_Type01_Danish()
+    {
+        Props_Retro.SetActive(false);
+        Props_Danish.SetActive(true);
+        Props_Contemp.SetActive(false);
+        foreach (var item in Retro_False_Roof)
+        {
+            item.SetActive(false);
+        }
+
+        Roof1.materials = Danish_Roof1;
+        Roof2.materials = Danish_Roof2;
+        Roof3.materials = Danish_Roof3;
+        //Roof4.materials = Danish_Roof4;
+        Floor.materials = Danish_Floors;
+        Wall.materials = Danish_Walls;
+        Skirting.materials = Danish_Skirting;
+
+        foreach (var item in Door_Frames)
+        {
+            item.materials = Danish_DoorFrames;
+        }
+        foreach (var item in Window_Frames)
+        {
+            item.materials = Danish_WindowFrames;
+        }
+        foreach (var item in Bathroom_Window_Frames)
+        {
+            item.materials = Danish_BathroomWindowFrames;
+        }
+    }
+    public void Wing_A_FlatNo_02_Type01_Contemp()
+    {
+        Props_Retro.SetActive(false);
+        Props_Danish.SetActive(false);
+        Props_Contemp.SetActive(true);
+        foreach (var item in Retro_False_Roof)
+        {
+            item.SetActive(false);
+        }
+
+        Roof1.materials = Contemp_Roof1;
+        Roof2.materials = Contemp_Roof2;
+        Roof3.materials = Contemp_Roof3;
+        //Roof4.materials = Contemp_Roof4;
+        Floor.materials = Contemp_Floors;
+        Wall.materials = Contemp_Walls;
+        Skirting.materials = Contemp_Skirting;
+
+        foreach (var item in Door_Frames)
+        {
+            item.materials = Contemp_DoorFrames;
+        }
+        foreach (var item in Window_Frames)
+        {
+            item.materials = Contemp_WindowFrames;
+        }
+        foreach (var item in Bathroom_Window_Frames)
+        {
+            item.materials = Contemp_BathroomWindowFrames;
+        }
+    }
+
+
     //Wing_B_FlatNo_02_Type01
 
     public void Wing_B_FlatNo_02_Type01_Retro()
