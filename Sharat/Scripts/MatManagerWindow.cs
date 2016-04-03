@@ -13,6 +13,7 @@ public class MatManagerWindow : EditorWindow {
     SerializedProperty Door_Frames;
     SerializedProperty Window_Frames;
     SerializedProperty Bathroom_Window_Frames;
+    SerializedProperty Retro_False_Roof;
 
     SerializedProperty Retro_Roof1;
     SerializedProperty Retro_Roof2;
@@ -46,6 +47,8 @@ public class MatManagerWindow : EditorWindow {
     SerializedProperty Contemp_DoorFrames;
     SerializedProperty Contemp_WindowFrames;
     SerializedProperty Contemp_BathroomWindowFrames;
+
+    Vector2 scrollPos;
 
     [MenuItem("EyE-RiS/MaterialManager")]
     public static void ShowWindow()
@@ -82,6 +85,7 @@ public class MatManagerWindow : EditorWindow {
         Door_Frames = serializedObj.FindProperty("Door_Frames");
         Window_Frames = serializedObj.FindProperty("Window_Frames");
         Bathroom_Window_Frames = serializedObj.FindProperty("Bathroom_Window_Frames");
+        Retro_False_Roof = serializedObj.FindProperty("Retro_False_Roof");
 
         Retro_Roof1 = serializedObj.FindProperty("Retro_Roof1");
         Retro_Roof2 = serializedObj.FindProperty("Retro_Roof2");
@@ -123,13 +127,14 @@ public class MatManagerWindow : EditorWindow {
     {
         serializedObj.Update();
 
-        EditorGUILayout.BeginScrollView(new Vector2(0, 0));
+        scrollPos = EditorGUILayout.BeginScrollView(scrollPos);
 
         EditorGUILayout.BeginToggleGroup("Props Link ", true);
 
         myTarget.Props_Retro = (GameObject) EditorGUILayout.ObjectField("Retro Ref :", myTarget.Props_Retro, typeof(GameObject), true);
         myTarget.Props_Danish = (GameObject) EditorGUILayout.ObjectField("Danish Ref :", myTarget.Props_Danish, typeof(GameObject), true);
         myTarget.Props_Contemp = (GameObject) EditorGUILayout.ObjectField("Contemp Ref :", myTarget.Props_Contemp, typeof(GameObject), true);
+        EditorGUILayout.PropertyField(Retro_False_Roof, new GUIContent("Retro False Roof Refs : "), true);
         
 
         EditorGUILayout.EndToggleGroup();

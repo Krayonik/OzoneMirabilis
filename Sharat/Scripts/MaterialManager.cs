@@ -11,6 +11,8 @@ public class MaterialManager : MonoBehaviour {
     public GameObject Props_Danish;
     [SerializeField]
     public GameObject Props_Contemp;
+    [SerializeField]
+    public GameObject[] Retro_False_Roof;
 
     [SerializeField]
     public Renderer Roof1;
@@ -137,6 +139,10 @@ public class MaterialManager : MonoBehaviour {
         Props_Retro.SetActive(true);
         Props_Danish.SetActive(false);
         Props_Contemp.SetActive(false);
+        foreach (var item in Retro_False_Roof)
+        {
+            item.SetActive(true);
+        }
 
 
         Roof1.materials = Retro_Roof1;
@@ -159,12 +165,17 @@ public class MaterialManager : MonoBehaviour {
         {
             item.materials = Retro_BathroomWindowFrames;
         }
+        
     }
     public void Wing_A_FlatNo_01_Type01_Danish()
     {
         Props_Retro.SetActive(false);
         Props_Danish.SetActive(true);
         Props_Contemp.SetActive(false);
+        foreach (var item in Retro_False_Roof)
+        {
+            item.SetActive(false);
+        }
 
         Roof1.materials = Danish_Roof1;
         Roof2.materials = Danish_Roof2;
@@ -192,6 +203,10 @@ public class MaterialManager : MonoBehaviour {
         Props_Retro.SetActive(false);
         Props_Danish.SetActive(false);
         Props_Contemp.SetActive(true);
+        foreach (var item in Retro_False_Roof)
+        {
+            item.SetActive(false);
+        }
 
         Roof1.materials = Contemp_Roof1;
         Roof2.materials = Contemp_Roof2;
