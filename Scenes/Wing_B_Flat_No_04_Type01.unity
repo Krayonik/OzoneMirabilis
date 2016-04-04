@@ -263,6 +263,10 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 445088, guid: f10fa9ed18ef8da45b23c6f91630bf62, type: 2}
   m_PrefabInternal: {fileID: 66490708}
+--- !u!1 &69764320 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100014, guid: 7d09ffe8b30592f46bd66bd5ae01c6c4, type: 3}
+  m_PrefabInternal: {fileID: 967541159}
 --- !u!1001 &75805742
 Prefab:
   m_ObjectHideFlags: 0
@@ -1435,9 +1439,13 @@ MonoBehaviour:
   Props_Retro: {fileID: 1861783276}
   Props_Danish: {fileID: 1537156523}
   Props_Contemp: {fileID: 1337568671}
+  Retro_False_Roof:
+  - {fileID: 1280287282}
+  - {fileID: 69764320}
   Roof1: {fileID: 967541166}
   Roof2: {fileID: 1203267745}
   Roof3: {fileID: 1420368019}
+  Roof4: {fileID: 0}
   Wall: {fileID: 967541161}
   Floor: {fileID: 967541162}
   Skirting: {fileID: 1934660712}
@@ -1458,6 +1466,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 09453166860ba284cbd7d04aea7c6e5f, type: 2}
   Retro_Roof3:
   - {fileID: 2100000, guid: 09453166860ba284cbd7d04aea7c6e5f, type: 2}
+  Retro_Roof4: []
   Retro_Walls:
   - {fileID: 2100000, guid: 078a5311213a5ca4d8304f73f0a2fcbc, type: 2}
   - {fileID: 2100000, guid: 59139a0db6d024b45888479ba560b15f, type: 2}
@@ -1487,6 +1496,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: e641626b40e634b4faf63edd546d0a77, type: 2}
   Danish_Roof3:
   - {fileID: 2100000, guid: e641626b40e634b4faf63edd546d0a77, type: 2}
+  Danish_Roof4: []
   Danish_Walls:
   - {fileID: 2100000, guid: 5111b3592676bfd4fa902b409dca64d0, type: 2}
   - {fileID: 2100000, guid: c4ffad933c7dc4f4ca1d01b5a43e74f1, type: 2}
@@ -1516,6 +1526,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 67a58b232b7f688478ce55fa6baa8f31, type: 2}
   Contemp_Roof3:
   - {fileID: 2100000, guid: 67a58b232b7f688478ce55fa6baa8f31, type: 2}
+  Contemp_Roof4: []
   Contemp_Walls:
   - {fileID: 2100000, guid: d23436ae9f3b3a84ba9c450bbbd51092, type: 2}
   - {fileID: 2100000, guid: 494bea0210eebf74d82bb93ada12d60c, type: 2}
@@ -3681,20 +3692,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e50e925fb93c78246bf995d9dc3a2330, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 6
-  adaptiveTextureSize: 256
-  remapCurve:
-    serializedVersion: 2
-    m_Curve: []
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  exposureAdjustment: 1.5
-  middleGrey: 0.55
-  white: 2
-  adaptionSpeed: 1.5
-  tonemapper: {fileID: 4800000, guid: 003377fc2620a44939dadde6fe3f8190, type: 3}
-  validRenderTextureFormat: 0
 --- !u!1001 &828461966
 Prefab:
   m_ObjectHideFlags: 0
@@ -6278,6 +6275,10 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 450472, guid: a045509d52dadf74e9b46d27b7fa012d, type: 2}
   m_PrefabInternal: {fileID: 1275256468}
+--- !u!1 &1280287282 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100008, guid: 7d09ffe8b30592f46bd66bd5ae01c6c4, type: 3}
+  m_PrefabInternal: {fileID: 967541159}
 --- !u!1001 &1303151362
 Prefab:
   m_ObjectHideFlags: 0
