@@ -3890,7 +3890,8 @@ MonoBehaviour:
   Contemp_DoorFrames:
   - {fileID: 2100000, guid: dd65f00070317654295cf50fdfc4a117, type: 2}
   - {fileID: 2100000, guid: 042fb9b4ec3fb384198479fc300fc3a2, type: 2}
-  Contemp_WindowFrames: []
+  Contemp_WindowFrames:
+  - {fileID: 2100000, guid: 042fb9b4ec3fb384198479fc300fc3a2, type: 2}
   Contemp_BathroomWindowFrames:
   - {fileID: 2100000, guid: 042fb9b4ec3fb384198479fc300fc3a2, type: 2}
 --- !u!1001 &475113852
@@ -7585,7 +7586,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100038, guid: d99bc885ca483ec46a7935284001688e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d99bc885ca483ec46a7935284001688e, type: 3}
