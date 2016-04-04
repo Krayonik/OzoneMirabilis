@@ -504,6 +504,22 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 2300022, guid: 856e92423dd40c6488ad0f8e82c167d8,
     type: 3}
   m_PrefabInternal: {fileID: 76180393}
+--- !u!1 &76180413 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100032, guid: 856e92423dd40c6488ad0f8e82c167d8, type: 3}
+  m_PrefabInternal: {fileID: 76180393}
+--- !u!65 &76180414
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 76180413}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 12.63164, y: 0.100173116, z: 6.283437}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &85719997
 Prefab:
   m_ObjectHideFlags: 0
@@ -6241,7 +6257,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1031115195
 Transform:
   m_ObjectHideFlags: 0
@@ -9881,7 +9897,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1562941221
 Transform:
   m_ObjectHideFlags: 0
@@ -11802,6 +11818,7 @@ MonoBehaviour:
   Roof2: {fileID: 76180411}
   Roof3: {fileID: 76180410}
   Roof4: {fileID: 76180409}
+  Roof5: {fileID: 0}
   Wall: {fileID: 76180408}
   Floor: {fileID: 76180407}
   Skirting: {fileID: 76180406}
@@ -11829,6 +11846,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3eb2fc657b778ac498048630e40c9b8c, type: 2}
   Retro_Roof4:
   - {fileID: 2100000, guid: 3eb2fc657b778ac498048630e40c9b8c, type: 2}
+  Retro_Roof5: []
   Retro_Walls:
   - {fileID: 2100000, guid: 672a1e5af17d4b545bddd41e9c6e04f3, type: 2}
   - {fileID: 2100000, guid: e2a3884088a7e0244b8987ea6bd19642, type: 2}
@@ -11865,6 +11883,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 8d1cb2cd166e22b4fa99f89179a45318, type: 2}
   Danish_Roof4:
   - {fileID: 2100000, guid: 8d1cb2cd166e22b4fa99f89179a45318, type: 2}
+  Danish_Roof5: []
   Danish_Walls:
   - {fileID: 2100000, guid: 4be4570cc7215f1488582a73cbfcab52, type: 2}
   - {fileID: 2100000, guid: ef8c0cbab814cf64fa5fa7ce86dc8475, type: 2}
@@ -11901,6 +11920,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: d374c51e04e57614dafdc72e29bc8ef4, type: 2}
   Contemp_Roof4:
   - {fileID: 2100000, guid: d374c51e04e57614dafdc72e29bc8ef4, type: 2}
+  Contemp_Roof5: []
   Contemp_Walls:
   - {fileID: 2100000, guid: 740d4566f91c17d4b8eae8c29684fa73, type: 2}
   - {fileID: 2100000, guid: 45435288ed5845e448e5b5b1185e6342, type: 2}
@@ -13226,7 +13246,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -3.938
+      value: 1.53
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_LocalPosition.y
@@ -13234,7 +13254,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 2.733
+      value: -1.58
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_LocalRotation.x
@@ -13242,7 +13262,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0.7071068
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_LocalRotation.z
@@ -13250,7 +13270,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 0.7071067
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_RootOrder

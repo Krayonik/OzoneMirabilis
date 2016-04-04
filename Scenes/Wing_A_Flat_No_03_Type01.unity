@@ -937,7 +937,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -3.938
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_LocalPosition.y
@@ -945,23 +945,23 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 2.733
+      value: -0.66
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: 0.002379661
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0.7071068
+      value: 0.27218267
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0.043070894
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 0.7071067
+      value: 0.96127826
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_RootOrder
@@ -4087,7 +4087,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &631121797
 Transform:
   m_ObjectHideFlags: 0
@@ -5986,6 +5986,22 @@ GameObject:
 GameObject:
   m_PrefabParentObject: {fileID: 100008, guid: a3198f177f1fc8f4f8c7e1f8b133a3ae, type: 3}
   m_PrefabInternal: {fileID: 848649905}
+--- !u!1 &848649929 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100050, guid: a3198f177f1fc8f4f8c7e1f8b133a3ae, type: 3}
+  m_PrefabInternal: {fileID: 848649905}
+--- !u!65 &848649930
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 848649929}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 13.368481, y: 0.099999994, z: 7.9389215}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &849698011
 Prefab:
   m_ObjectHideFlags: 0
@@ -6538,7 +6554,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &909141231
 Transform:
   m_ObjectHideFlags: 0
@@ -10507,6 +10523,10 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 133940, guid: 7fd26451fadce154cab3e65307e7fd96, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7fd26451fadce154cab3e65307e7fd96, type: 2}
   m_IsPrefabParent: 0
@@ -10925,6 +10945,7 @@ MonoBehaviour:
   Roof2: {fileID: 848649924}
   Roof3: {fileID: 848649923}
   Roof4: {fileID: 848649922}
+  Roof5: {fileID: 0}
   Wall: {fileID: 848649921}
   Floor: {fileID: 848649920}
   Skirting: {fileID: 848649919}
@@ -10953,6 +10974,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 4a82cd66fb266ec49b5ff53f720e917a, type: 2}
   Retro_Roof4:
   - {fileID: 2100000, guid: 4a82cd66fb266ec49b5ff53f720e917a, type: 2}
+  Retro_Roof5: []
   Retro_Walls:
   - {fileID: 2100000, guid: 1a7c76361234a1b49a015327f2153e3d, type: 2}
   - {fileID: 2100000, guid: ff5d1ce362b9aac468ec891dd84e2fb1, type: 2}
@@ -10991,6 +11013,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 5b2f3815e6e06a444b77c8919952baaa, type: 2}
   Danish_Roof4:
   - {fileID: 2100000, guid: 5b2f3815e6e06a444b77c8919952baaa, type: 2}
+  Danish_Roof5: []
   Danish_Walls:
   - {fileID: 2100000, guid: b2e6ee783a7da3b458869d1ac68e1df7, type: 2}
   - {fileID: 2100000, guid: 02b10dd93e0361948b2f70a3405e2361, type: 2}
@@ -11029,6 +11052,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 2ccb99b1cb88f7e43beeb2dc387cc554, type: 2}
   Contemp_Roof4:
   - {fileID: 2100000, guid: 2ccb99b1cb88f7e43beeb2dc387cc554, type: 2}
+  Contemp_Roof5: []
   Contemp_Walls:
   - {fileID: 2100000, guid: f2cc0a926b68644499b8f32c5fad41c4, type: 2}
   - {fileID: 2100000, guid: fb7dd79f815c4964eb090436f414ed1b, type: 2}

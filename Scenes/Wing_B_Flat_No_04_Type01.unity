@@ -1446,6 +1446,7 @@ MonoBehaviour:
   Roof2: {fileID: 1203267745}
   Roof3: {fileID: 1420368019}
   Roof4: {fileID: 0}
+  Roof5: {fileID: 0}
   Wall: {fileID: 967541161}
   Floor: {fileID: 967541162}
   Skirting: {fileID: 1934660712}
@@ -1467,6 +1468,7 @@ MonoBehaviour:
   Retro_Roof3:
   - {fileID: 2100000, guid: 09453166860ba284cbd7d04aea7c6e5f, type: 2}
   Retro_Roof4: []
+  Retro_Roof5: []
   Retro_Walls:
   - {fileID: 2100000, guid: 078a5311213a5ca4d8304f73f0a2fcbc, type: 2}
   - {fileID: 2100000, guid: 59139a0db6d024b45888479ba560b15f, type: 2}
@@ -1497,6 +1499,7 @@ MonoBehaviour:
   Danish_Roof3:
   - {fileID: 2100000, guid: e641626b40e634b4faf63edd546d0a77, type: 2}
   Danish_Roof4: []
+  Danish_Roof5: []
   Danish_Walls:
   - {fileID: 2100000, guid: 5111b3592676bfd4fa902b409dca64d0, type: 2}
   - {fileID: 2100000, guid: c4ffad933c7dc4f4ca1d01b5a43e74f1, type: 2}
@@ -1527,6 +1530,7 @@ MonoBehaviour:
   Contemp_Roof3:
   - {fileID: 2100000, guid: 67a58b232b7f688478ce55fa6baa8f31, type: 2}
   Contemp_Roof4: []
+  Contemp_Roof5: []
   Contemp_Walls:
   - {fileID: 2100000, guid: d23436ae9f3b3a84ba9c450bbbd51092, type: 2}
   - {fileID: 2100000, guid: 494bea0210eebf74d82bb93ada12d60c, type: 2}
@@ -3162,6 +3166,18 @@ Transform:
 GameObject:
   m_PrefabParentObject: {fileID: 100010, guid: 7d09ffe8b30592f46bd66bd5ae01c6c4, type: 3}
   m_PrefabInternal: {fileID: 967541159}
+--- !u!65 &636796393
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 636796392}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.012631, y: 0.099999994, z: 5.3427525}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &636796395
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3708,7 +3724,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.45
+      value: 0.22
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_LocalPosition.y
@@ -6543,7 +6559,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1337568672
 Transform:
   m_ObjectHideFlags: 0
@@ -9412,7 +9428,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1861783277
 Transform:
   m_ObjectHideFlags: 0
