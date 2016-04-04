@@ -1620,7 +1620,8 @@ public class MaterialManager : MonoBehaviour {
         Roof1.materials = Retro_Roof1;
         Roof2.materials = Retro_Roof2;
         Roof3.materials = Retro_Roof3;
-        //Roof4.materials = Retro_Roof4;
+        Roof4.materials = Retro_Roof4;
+        Roof5.materials = Retro_Roof5;
         Floor.materials = Retro_Floors;
         Wall.materials = Retro_Walls;
         Skirting.materials = Retro_Skirting;
@@ -1652,7 +1653,8 @@ public class MaterialManager : MonoBehaviour {
         Roof1.materials = Danish_Roof1;
         Roof2.materials = Danish_Roof2;
         Roof3.materials = Danish_Roof3;
-        //Roof4.materials = Danish_Roof4;
+        Roof4.materials = Danish_Roof4;
+        Roof5.materials = Danish_Roof5;
         Floor.materials = Danish_Floors;
         Wall.materials = Danish_Walls;
         Skirting.materials = Danish_Skirting;
@@ -1683,7 +1685,8 @@ public class MaterialManager : MonoBehaviour {
         Roof1.materials = Contemp_Roof1;
         Roof2.materials = Contemp_Roof2;
         Roof3.materials = Contemp_Roof3;
-        //Roof4.materials = Contemp_Roof4;
+        Roof4.materials = Contemp_Roof4;
+        Roof5.materials = Contemp_Roof5;
         Floor.materials = Contemp_Floors;
         Wall.materials = Contemp_Walls;
         Skirting.materials = Contemp_Skirting;
@@ -1720,7 +1723,8 @@ public class MaterialManager : MonoBehaviour {
         Roof1.materials = Retro_Roof1;
         Roof2.materials = Retro_Roof2;
         Roof3.materials = Retro_Roof3;
-        //Roof4.materials = Retro_Roof4;
+        Roof4.materials = Retro_Roof4;
+        Roof5.materials = Retro_Roof5;
         Floor.materials = Retro_Floors;
         Wall.materials = Retro_Walls;
         Skirting.materials = Retro_Skirting;
@@ -1752,7 +1756,8 @@ public class MaterialManager : MonoBehaviour {
         Roof1.materials = Danish_Roof1;
         Roof2.materials = Danish_Roof2;
         Roof3.materials = Danish_Roof3;
-        //Roof4.materials = Danish_Roof4;
+        Roof4.materials = Danish_Roof4;
+        Roof5.materials = Danish_Roof5;
         Floor.materials = Danish_Floors;
         Wall.materials = Danish_Walls;
         Skirting.materials = Danish_Skirting;
@@ -1783,7 +1788,8 @@ public class MaterialManager : MonoBehaviour {
         Roof1.materials = Contemp_Roof1;
         Roof2.materials = Contemp_Roof2;
         Roof3.materials = Contemp_Roof3;
-        //Roof4.materials = Contemp_Roof4;
+        Roof4.materials = Contemp_Roof4;
+        Roof5.materials = Contemp_Roof5;
         Floor.materials = Contemp_Floors;
         Wall.materials = Contemp_Walls;
         Skirting.materials = Contemp_Skirting;
