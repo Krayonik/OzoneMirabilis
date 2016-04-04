@@ -90,7 +90,8 @@ public class CameraDirector : MonoBehaviour {
         City_Button.color = Active_Color;
         Project_Button.color = Inactive_Color;
         Apartment_Button.color = Inactive_Color;
-
+        UIS.CloseAndHideAmenPanel();
+        UIS.ShowLandPanel();
 
     }
 
@@ -101,6 +102,9 @@ public class CameraDirector : MonoBehaviour {
         City_Button.color = Inactive_Color;
         Project_Button.color = Active_Color;
         Apartment_Button.color = Inactive_Color;
+        UIS.CloseAndHideLandPanel();
+        UIS.ShowAmenPanel();
+
     }
 
     void Event_ApartmentView()
