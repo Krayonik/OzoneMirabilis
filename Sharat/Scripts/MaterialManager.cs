@@ -22,6 +22,8 @@ public class MaterialManager : MonoBehaviour {
     public Renderer Roof3;
     [SerializeField]
     public Renderer Roof4;
+    [SerializeField]
+    public Renderer Roof5;
 
     [SerializeField]
     public Renderer Wall;
@@ -48,6 +50,8 @@ public class MaterialManager : MonoBehaviour {
     [SerializeField]
     public Material[] Retro_Roof4;
     [SerializeField]
+    public Material[] Retro_Roof5;
+    [SerializeField]
     public Material[] Retro_Walls;
     [SerializeField]
     public Material[] Retro_Floors;
@@ -70,6 +74,8 @@ public class MaterialManager : MonoBehaviour {
     [SerializeField]
     public Material[] Danish_Roof4;
     [SerializeField]
+    public Material[] Danish_Roof5;
+    [SerializeField]
     public Material[] Danish_Walls;
     [SerializeField]
     public Material[] Danish_Floors;
@@ -91,6 +97,8 @@ public class MaterialManager : MonoBehaviour {
     public Material[] Contemp_Roof3;
     [SerializeField]
     public Material[] Contemp_Roof4;
+    [SerializeField]
+    public Material[] Contemp_Roof5;
     [SerializeField]
     public Material[] Contemp_Walls;
     [SerializeField]

@@ -19,6 +19,7 @@ public class MatManagerWindow : EditorWindow {
     SerializedProperty Retro_Roof2;
     SerializedProperty Retro_Roof3;
     SerializedProperty Retro_Roof4;
+    SerializedProperty Retro_Roof5;
     SerializedProperty Retro_Walls;
     SerializedProperty Retro_Floors;
     SerializedProperty Retro_Skirting;
@@ -30,6 +31,7 @@ public class MatManagerWindow : EditorWindow {
     SerializedProperty Danish_Roof2;
     SerializedProperty Danish_Roof3;
     SerializedProperty Danish_Roof4;
+    SerializedProperty Danish_Roof5;
     SerializedProperty Danish_Walls;
     SerializedProperty Danish_Floors;
     SerializedProperty Danish_Skirting;
@@ -41,6 +43,7 @@ public class MatManagerWindow : EditorWindow {
     SerializedProperty Contemp_Roof2;
     SerializedProperty Contemp_Roof3;
     SerializedProperty Contemp_Roof4;
+    SerializedProperty Contemp_Roof5;
     SerializedProperty Contemp_Walls;
     SerializedProperty Contemp_Floors;
     SerializedProperty Contemp_Skirting;
@@ -91,6 +94,7 @@ public class MatManagerWindow : EditorWindow {
         Retro_Roof2 = serializedObj.FindProperty("Retro_Roof2");
         Retro_Roof3 = serializedObj.FindProperty("Retro_Roof3");
         Retro_Roof4 = serializedObj.FindProperty("Retro_Roof4");
+        Retro_Roof5 = serializedObj.FindProperty("Retro_Roof5");
         Retro_Walls = serializedObj.FindProperty("Retro_Walls");
         Retro_Floors = serializedObj.FindProperty("Retro_Floors");
         Retro_Skirting = serializedObj.FindProperty("Retro_Skirting");
@@ -102,6 +106,7 @@ public class MatManagerWindow : EditorWindow {
         Danish_Roof2 = serializedObj.FindProperty("Danish_Roof2");
         Danish_Roof3 = serializedObj.FindProperty("Danish_Roof3");
         Danish_Roof4 = serializedObj.FindProperty("Danish_Roof4");
+        Danish_Roof5 = serializedObj.FindProperty("Danish_Roof5");
         Danish_Walls = serializedObj.FindProperty("Danish_Walls");
         Danish_Floors = serializedObj.FindProperty("Danish_Floors");
         Danish_Skirting = serializedObj.FindProperty("Danish_Skirting");
@@ -114,6 +119,7 @@ public class MatManagerWindow : EditorWindow {
         Contemp_Roof2 = serializedObj.FindProperty("Contemp_Roof2");
         Contemp_Roof3 = serializedObj.FindProperty("Contemp_Roof3");
         Contemp_Roof4 = serializedObj.FindProperty("Contemp_Roof4");
+        Contemp_Roof5 = serializedObj.FindProperty("Contemp_Roof5");
         Contemp_Walls = serializedObj.FindProperty("Contemp_Walls");
         Contemp_Floors = serializedObj.FindProperty("Contemp_Floors");
         Contemp_Skirting = serializedObj.FindProperty("Contemp_Skirting");
@@ -150,6 +156,7 @@ public class MatManagerWindow : EditorWindow {
         myTarget.Roof2 = (Renderer) EditorGUILayout.ObjectField("Roof 2 :", myTarget.Roof2, typeof(Renderer), true);
         myTarget.Roof3 = (Renderer) EditorGUILayout.ObjectField("Roof 3 :", myTarget.Roof3, typeof(Renderer), true);
         myTarget.Roof4 = (Renderer)EditorGUILayout.ObjectField("Roof 4 :", myTarget.Roof4, typeof(Renderer), true);
+        myTarget.Roof5 = (Renderer)EditorGUILayout.ObjectField("Roof 5 :", myTarget.Roof5, typeof(Renderer), true);
         myTarget.Wall = (Renderer)EditorGUILayout.ObjectField("Wall :", myTarget.Wall, typeof(Renderer), true);
         myTarget.Floor = (Renderer)EditorGUILayout.ObjectField("Floor :", myTarget.Floor, typeof(Renderer), true);
         myTarget.Skirting = (Renderer)EditorGUILayout.ObjectField("Skirting :", myTarget.Skirting, typeof(Renderer), true);
@@ -171,6 +178,8 @@ public class MatManagerWindow : EditorWindow {
         EditorGUILayout.PropertyField(Retro_Roof3, new GUIContent("Retro Roof3 : "), true);
 
         EditorGUILayout.PropertyField(Retro_Roof4, new GUIContent("Retro Roof4 : "), true);
+
+        EditorGUILayout.PropertyField(Retro_Roof5, new GUIContent("Retro Roof5 : "), true);
         
         EditorGUILayout.PropertyField(Retro_Walls, new GUIContent("Retro Walls : "), true);
         
@@ -202,6 +211,8 @@ public class MatManagerWindow : EditorWindow {
 
         EditorGUILayout.PropertyField(Danish_Roof4, new GUIContent("Danish Roof4 : "), true);
 
+        EditorGUILayout.PropertyField(Danish_Roof5, new GUIContent("Danish Roof5 : "), true);
+
         EditorGUILayout.PropertyField(Danish_Walls, new GUIContent("Danish Walls : "), true);
 
         EditorGUILayout.PropertyField(Danish_Floors, new GUIContent("Danish Floors : "), true);
@@ -231,6 +242,8 @@ public class MatManagerWindow : EditorWindow {
         EditorGUILayout.PropertyField(Contemp_Roof3, new GUIContent("Contemp Roof3 : "), true);
 
         EditorGUILayout.PropertyField(Contemp_Roof4, new GUIContent("Contemp Roof4 : "), true);
+
+        EditorGUILayout.PropertyField(Contemp_Roof5, new GUIContent("Contemp Roof5 : "), true);
 
         EditorGUILayout.PropertyField(Contemp_Walls, new GUIContent("Contemp Walls : "), true);
 

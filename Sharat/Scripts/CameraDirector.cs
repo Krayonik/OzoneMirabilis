@@ -12,6 +12,8 @@ public class CameraDirector : MonoBehaviour {
     public GameObject VR_Button;
     public GameObject Back_Button;
 
+    public GameObject Terrain_Mumbai;
+
 
     public CanvasGroup LocationsUI;
     public CanvasGroup WorldspaceUI;
@@ -22,6 +24,8 @@ public class CameraDirector : MonoBehaviour {
 
     public Color Inactive_Color;
     public Color Active_Color;
+
+    private UIScript UIS;
 
     public enum MenuState
     {
@@ -87,6 +91,7 @@ public class CameraDirector : MonoBehaviour {
         Project_Button.color = Inactive_Color;
         Apartment_Button.color = Inactive_Color;
 
+
     }
 
     void Event_ProjectView()
@@ -115,7 +120,9 @@ public class CameraDirector : MonoBehaviour {
         CityViewSettings.Apply();
         VR_Button.SetActive(false);
         Back_Button.SetActive(false);
-        
+
+        UIS = this.GetComponent<UIScript>();
+
         CurrState = MenuState.City;
 
 	}
@@ -124,6 +131,7 @@ public class CameraDirector : MonoBehaviour {
     public void OnClick_CityView()
     {
         CityViewSettings.Apply();
+        Terrain_Mumbai.SetActive(true);
         VR_Button.SetActive(false);
         Back_Button.SetActive(false);
         CurrState = MenuState.City;
@@ -132,6 +140,7 @@ public class CameraDirector : MonoBehaviour {
     public void OnClick_ProjectView()
     {
         ProjectViewSettings.Apply();
+        Terrain_Mumbai.SetActive(false);
         VR_Button.SetActive(true);
         Back_Button.SetActive(true);
         CurrState = MenuState.Project;
