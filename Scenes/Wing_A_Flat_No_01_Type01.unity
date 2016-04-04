@@ -5648,6 +5648,7 @@ MonoBehaviour:
   Roof2: {fileID: 619699810}
   Roof3: {fileID: 619699809}
   Roof4: {fileID: 619699808}
+  Roof5: {fileID: 0}
   Wall: {fileID: 619699797}
   Floor: {fileID: 619699798}
   Skirting: {fileID: 619699801}
@@ -5675,6 +5676,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 32012b0f01364f745b97ec53b9c0cdb5, type: 2}
   Retro_Roof4:
   - {fileID: 2100000, guid: 32012b0f01364f745b97ec53b9c0cdb5, type: 2}
+  Retro_Roof5: []
   Retro_Walls:
   - {fileID: 2100000, guid: b362a8da42a62ba49a5389e58c5e033c, type: 2}
   - {fileID: 2100000, guid: b6dd94fea2e0b6e488ac53c588a7c7e8, type: 2}
@@ -5713,6 +5715,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 32012b0f01364f745b97ec53b9c0cdb5, type: 2}
   Danish_Roof4:
   - {fileID: 2100000, guid: 32012b0f01364f745b97ec53b9c0cdb5, type: 2}
+  Danish_Roof5: []
   Danish_Walls:
   - {fileID: 2100000, guid: a438b249aa500ee479efc761f7d9c793, type: 2}
   - {fileID: 2100000, guid: a33b0a598dc7af04e9492d102e34c6ae, type: 2}
@@ -5751,6 +5754,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 32012b0f01364f745b97ec53b9c0cdb5, type: 2}
   Contemp_Roof4:
   - {fileID: 2100000, guid: 32012b0f01364f745b97ec53b9c0cdb5, type: 2}
+  Contemp_Roof5: []
   Contemp_Walls:
   - {fileID: 2100000, guid: 88e006a8852209342b4f378288f13caa, type: 2}
   - {fileID: 2100000, guid: e03eb55eaa97f2541bf2b39dd1b54e6d, type: 2}
@@ -10914,20 +10918,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e50e925fb93c78246bf995d9dc3a2330, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 6
-  adaptiveTextureSize: 256
-  remapCurve:
-    serializedVersion: 2
-    m_Curve: []
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  exposureAdjustment: 1.5
-  middleGrey: 0.55
-  white: 2
-  adaptionSpeed: 1.5
-  tonemapper: {fileID: 4800000, guid: 003377fc2620a44939dadde6fe3f8190, type: 3}
-  validRenderTextureFormat: 0
 --- !u!1001 &1514789150
 Prefab:
   m_ObjectHideFlags: 0
@@ -11182,7 +11172,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 2
+  m_Lightmapping: 4
   m_BounceIntensity: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0

@@ -471,45 +471,117 @@ MonoBehaviour:
   Roof3: {fileID: 935318357}
   Roof4: {fileID: 0}
   Roof5: {fileID: 0}
-  Wall: {fileID: 0}
-  Floor: {fileID: 0}
-  Skirting: {fileID: 0}
-  Door_Frames: []
-  Window_Frames: []
-  Bathroom_Window_Frames: []
-  Retro_Roof1: []
-  Retro_Roof2: []
-  Retro_Roof3: []
+  Wall: {fileID: 935318372}
+  Floor: {fileID: 935318371}
+  Skirting: {fileID: 935318370}
+  Door_Frames:
+  - {fileID: 935318369}
+  - {fileID: 935318368}
+  - {fileID: 935318367}
+  - {fileID: 935318366}
+  Window_Frames:
+  - {fileID: 935318365}
+  - {fileID: 935318364}
+  Bathroom_Window_Frames:
+  - {fileID: 935318363}
+  - {fileID: 935318362}
+  Retro_Roof1:
+  - {fileID: 2100000, guid: 0636f3ec3e5848545a4902545852f79a, type: 2}
+  - {fileID: 2100000, guid: 061761909812f3d478f1a1cbff9830b9, type: 2}
+  Retro_Roof2:
+  - {fileID: 2100000, guid: 303b0abd7fd7c6b439440fc2c04a0762, type: 2}
+  Retro_Roof3:
+  - {fileID: 2100000, guid: 303b0abd7fd7c6b439440fc2c04a0762, type: 2}
   Retro_Roof4: []
   Retro_Roof5: []
-  Retro_Walls: []
-  Retro_Floors: []
-  Retro_Skirting: []
-  Retro_DoorFrames: []
-  Retro_WindowFrames: []
-  Retro_BathroomWindowFrames: []
-  Danish_Roof1: []
-  Danish_Roof2: []
-  Danish_Roof3: []
+  Retro_Walls:
+  - {fileID: 2100000, guid: aab5cb38fe722b14c8faa3dd5d91c771, type: 2}
+  - {fileID: 2100000, guid: 89c4f4d659b5e714ba886b896175d6d3, type: 2}
+  - {fileID: 2100000, guid: 1c6fc0b0b3e073b47849891168ec9420, type: 2}
+  - {fileID: 2100000, guid: d2baf77f38bda474db4469937765a0af, type: 2}
+  - {fileID: 2100000, guid: 36859b45a6e25b045aff2fc45a76130e, type: 2}
+  - {fileID: 2100000, guid: 447e1f069361bb74bbc9a2dfa48abd84, type: 2}
+  - {fileID: 2100000, guid: cfff9f2f730d14945985b22197e82e43, type: 2}
+  Retro_Floors:
+  - {fileID: 2100000, guid: db9cef7dfe8cbb1468c2b90493cb2744, type: 2}
+  - {fileID: 2100000, guid: d36f07dee8f572040b5082bbe96fd001, type: 2}
+  - {fileID: 2100000, guid: 667d03d0cd90d7044b32198b381bb143, type: 2}
+  - {fileID: 2100000, guid: 885b97994382d5145817809543700bcc, type: 2}
+  - {fileID: 2100000, guid: 03cc390c44f7578439640b3db2a1fea7, type: 2}
+  Retro_Skirting:
+  - {fileID: 2100000, guid: 88c06fca3e1c77d4486d79250e757d9e, type: 2}
+  - {fileID: 2100000, guid: d1e064180736aa94ebe4c618a05d4a41, type: 2}
+  Retro_DoorFrames:
+  - {fileID: 2100000, guid: 31fe59fa33547ab46826655be0a2d7bf, type: 2}
+  Retro_WindowFrames:
+  - {fileID: 2100000, guid: bd5cb6ccd0b10d546ac172fd1775fc21, type: 2}
+  Retro_BathroomWindowFrames:
+  - {fileID: 2100000, guid: bd5cb6ccd0b10d546ac172fd1775fc21, type: 2}
+  Danish_Roof1:
+  - {fileID: 2100000, guid: a7b51f32e19930f4f80084e600bad331, type: 2}
+  - {fileID: 2100000, guid: c6113d87846735d458de35ca73513fa2, type: 2}
+  Danish_Roof2:
+  - {fileID: 2100000, guid: d3f6c306b9cf7934d8e5089c81fc490d, type: 2}
+  Danish_Roof3:
+  - {fileID: 2100000, guid: d3f6c306b9cf7934d8e5089c81fc490d, type: 2}
   Danish_Roof4: []
   Danish_Roof5: []
-  Danish_Walls: []
-  Danish_Floors: []
-  Danish_Skirting: []
-  Danish_DoorFrames: []
-  Danish_WindowFrames: []
-  Danish_BathroomWindowFrames: []
-  Contemp_Roof1: []
-  Contemp_Roof2: []
-  Contemp_Roof3: []
+  Danish_Walls:
+  - {fileID: 2100000, guid: 86b00fd481e3fdf47adf680fa89feeec, type: 2}
+  - {fileID: 2100000, guid: 9c3df85a1fbfcc74f80f87d16c0a27f3, type: 2}
+  - {fileID: 2100000, guid: d3cdadcc1e606f94892eccd84b5281fc, type: 2}
+  - {fileID: 2100000, guid: 3b2c6569cbbbc8f4d917cedf1eb7782b, type: 2}
+  - {fileID: 2100000, guid: b0741bf71ad45e04abe3483ace0958eb, type: 2}
+  - {fileID: 2100000, guid: 8475fb0c8f0ce934eae8595bd04821a9, type: 2}
+  - {fileID: 2100000, guid: c38df990fbe2d2247bcec47641554644, type: 2}
+  Danish_Floors:
+  - {fileID: 2100000, guid: 2574ace9df539c64282d99feb2dc9a10, type: 2}
+  - {fileID: 2100000, guid: c36a58f381127db47833995b0c292c95, type: 2}
+  - {fileID: 2100000, guid: bb5adcc91a09179429c9015e78a69888, type: 2}
+  - {fileID: 2100000, guid: 27cd9ab13f1618a41a976f5214835a07, type: 2}
+  - {fileID: 2100000, guid: da907c8537fba7249aee7af79a58a9c0, type: 2}
+  Danish_Skirting:
+  - {fileID: 2100000, guid: 313ae27cdf6242441be6198e19960fb0, type: 2}
+  - {fileID: 2100000, guid: df99d9724a0749b47bdc9f7f1050f5fe, type: 2}
+  Danish_DoorFrames:
+  - {fileID: 2100000, guid: fb865c86ad58b4d47997881894799bda, type: 2}
+  Danish_WindowFrames:
+  - {fileID: 2100000, guid: 619dec3d7e3565440947a27f3ad85b69, type: 2}
+  Danish_BathroomWindowFrames:
+  - {fileID: 2100000, guid: 619dec3d7e3565440947a27f3ad85b69, type: 2}
+  Contemp_Roof1:
+  - {fileID: 2100000, guid: ab5511477a098ac448dd818bb38e40ad, type: 2}
+  - {fileID: 2100000, guid: 4fc4ece072ddb684ebbb0fe46f59930a, type: 2}
+  Contemp_Roof2:
+  - {fileID: 2100000, guid: 186f2a5e8b5962a42a5c669ada468cbc, type: 2}
+  Contemp_Roof3:
+  - {fileID: 2100000, guid: 186f2a5e8b5962a42a5c669ada468cbc, type: 2}
   Contemp_Roof4: []
   Contemp_Roof5: []
-  Contemp_Walls: []
-  Contemp_Floors: []
-  Contemp_Skirting: []
-  Contemp_DoorFrames: []
-  Contemp_WindowFrames: []
-  Contemp_BathroomWindowFrames: []
+  Contemp_Walls:
+  - {fileID: 2100000, guid: f248984175dc2c34ea0d87a60019ca52, type: 2}
+  - {fileID: 2100000, guid: e12377c60c668834290bb6647bfc4878, type: 2}
+  - {fileID: 2100000, guid: 78f3d986af299354c8ff677ec2230582, type: 2}
+  - {fileID: 2100000, guid: 2746a5fbd462f4043ba0c2b931b1f0b1, type: 2}
+  - {fileID: 2100000, guid: 429d8e8c7233c8b46a1281e4a00be208, type: 2}
+  - {fileID: 2100000, guid: cd16b88f79c708641949c6b66bfbce86, type: 2}
+  - {fileID: 2100000, guid: ce24889f8823ed347a15d71c9e933cfb, type: 2}
+  Contemp_Floors:
+  - {fileID: 2100000, guid: ad78b94383c6c7945abc06d0c253db6d, type: 2}
+  - {fileID: 2100000, guid: b12b8c72260989d4abc19731bf0fcdeb, type: 2}
+  - {fileID: 2100000, guid: 9541580a291821b4ea6845ac8c4f0a4e, type: 2}
+  - {fileID: 2100000, guid: aac119276f2b9104bbd9af0c9266cb7e, type: 2}
+  - {fileID: 2100000, guid: 60b714aa50c53384baf1d3d44f9afb0c, type: 2}
+  Contemp_Skirting:
+  - {fileID: 2100000, guid: 61206f92f3c4f0349b31fdf572fab28d, type: 2}
+  - {fileID: 2100000, guid: a6cc66dfddd68f94d8612e50a0a190c8, type: 2}
+  Contemp_DoorFrames:
+  - {fileID: 2100000, guid: ae56c2efc7eff4f439c80b3c66b3c34a, type: 2}
+  - {fileID: 2100000, guid: 088d81cb433e9f643acd4ec90910f41d, type: 2}
+  Contemp_WindowFrames:
+  - {fileID: 2100000, guid: 088d81cb433e9f643acd4ec90910f41d, type: 2}
+  Contemp_BathroomWindowFrames:
+  - {fileID: 2100000, guid: 088d81cb433e9f643acd4ec90910f41d, type: 2}
 --- !u!4 &114569863
 Transform:
   m_ObjectHideFlags: 0
@@ -3942,6 +4014,61 @@ GameObject:
 GameObject:
   m_PrefabParentObject: {fileID: 100028, guid: 9ac9374a0c277ac44892ca7c4da4c829, type: 3}
   m_PrefabInternal: {fileID: 935318356}
+--- !u!23 &935318362 stripped
+MeshRenderer:
+  m_PrefabParentObject: {fileID: 2300008, guid: 9ac9374a0c277ac44892ca7c4da4c829,
+    type: 3}
+  m_PrefabInternal: {fileID: 935318356}
+--- !u!23 &935318363 stripped
+MeshRenderer:
+  m_PrefabParentObject: {fileID: 2300006, guid: 9ac9374a0c277ac44892ca7c4da4c829,
+    type: 3}
+  m_PrefabInternal: {fileID: 935318356}
+--- !u!23 &935318364 stripped
+MeshRenderer:
+  m_PrefabParentObject: {fileID: 2300002, guid: 9ac9374a0c277ac44892ca7c4da4c829,
+    type: 3}
+  m_PrefabInternal: {fileID: 935318356}
+--- !u!23 &935318365 stripped
+MeshRenderer:
+  m_PrefabParentObject: {fileID: 2300044, guid: 9ac9374a0c277ac44892ca7c4da4c829,
+    type: 3}
+  m_PrefabInternal: {fileID: 935318356}
+--- !u!23 &935318366 stripped
+MeshRenderer:
+  m_PrefabParentObject: {fileID: 2300036, guid: 9ac9374a0c277ac44892ca7c4da4c829,
+    type: 3}
+  m_PrefabInternal: {fileID: 935318356}
+--- !u!23 &935318367 stripped
+MeshRenderer:
+  m_PrefabParentObject: {fileID: 2300034, guid: 9ac9374a0c277ac44892ca7c4da4c829,
+    type: 3}
+  m_PrefabInternal: {fileID: 935318356}
+--- !u!23 &935318368 stripped
+MeshRenderer:
+  m_PrefabParentObject: {fileID: 2300032, guid: 9ac9374a0c277ac44892ca7c4da4c829,
+    type: 3}
+  m_PrefabInternal: {fileID: 935318356}
+--- !u!23 &935318369 stripped
+MeshRenderer:
+  m_PrefabParentObject: {fileID: 2300030, guid: 9ac9374a0c277ac44892ca7c4da4c829,
+    type: 3}
+  m_PrefabInternal: {fileID: 935318356}
+--- !u!23 &935318370 stripped
+MeshRenderer:
+  m_PrefabParentObject: {fileID: 2300042, guid: 9ac9374a0c277ac44892ca7c4da4c829,
+    type: 3}
+  m_PrefabInternal: {fileID: 935318356}
+--- !u!23 &935318371 stripped
+MeshRenderer:
+  m_PrefabParentObject: {fileID: 2300038, guid: 9ac9374a0c277ac44892ca7c4da4c829,
+    type: 3}
+  m_PrefabInternal: {fileID: 935318356}
+--- !u!23 &935318372 stripped
+MeshRenderer:
+  m_PrefabParentObject: {fileID: 2300010, guid: 9ac9374a0c277ac44892ca7c4da4c829,
+    type: 3}
+  m_PrefabInternal: {fileID: 935318356}
 --- !u!1001 &967444653
 Prefab:
   m_ObjectHideFlags: 0
@@ -7274,7 +7401,7 @@ RectTransform:
   - {fileID: 398217575}
   - {fileID: 1161602564}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
