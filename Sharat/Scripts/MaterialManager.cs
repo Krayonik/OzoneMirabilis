@@ -147,37 +147,37 @@ public class MaterialManager : MonoBehaviour {
                 Wing_A_FlatNo_04_Type03_Retro();
                 break;
             case "Wing_B_Flat_No_01_Type01":
-                Wing_A_FlatNo_01_Type01_Retro();
+                Wing_B_FlatNo_01_Type01_Retro();
                 break;
             case "Wing_B_Flat_No_01_Type02":
-                Wing_A_FlatNo_01_Type02_Retro();
+                Wing_B_FlatNo_01_Type02_Retro();
                 break;
             case "Wing_B_Flat_No_01_Type03":
-                Wing_A_FlatNo_01_Type03_Retro();
+                Wing_B_FlatNo_01_Type03_Retro();
                 break;
             case "Wing_B_Flat_No_02_Type01":
-                Wing_A_FlatNo_02_Type01_Retro();
+                Wing_B_FlatNo_02_Type01_Retro();
                 break;
             case "Wing_B_Flat_No_02_Type02":
-                Wing_A_FlatNo_02_Type02_Retro();
+                Wing_B_FlatNo_02_Type02_Retro();
                 break;
             case "Wing_B_Flat_No_03_Type01":
-                Wing_A_FlatNo_03_Type01_Retro();
+                Wing_B_FlatNo_03_Type01_Retro();
                 break;
             case "Wing_B_Flat_No_03_Type02":
-                Wing_A_FlatNo_03_Type02_Retro();
+                Wing_B_FlatNo_03_Type02_Retro();
                 break;
             case "Wing_B_Flat_No_03_Type03":
-                Wing_A_FlatNo_03_Type03_Retro();
+                Wing_B_FlatNo_03_Type03_Retro();
                 break;
             case "Wing_B_Flat_No_04_Type01":
-                Wing_A_FlatNo_04_Type01_Retro();
+                Wing_B_FlatNo_04_Type01_Retro();
                 break;
             case "Wing_B_Flat_No_04_Type02":
-                Wing_A_FlatNo_04_Type01_Retro();
+                Wing_B_FlatNo_04_Type01_Retro();
                 break;
             case "Wing_B_Flat_No_04_Type03":
-                Wing_A_FlatNo_04_Type03_Retro();
+                Wing_B_FlatNo_04_Type03_Retro();
                 break;
         }
 
