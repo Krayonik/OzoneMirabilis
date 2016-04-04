@@ -14,7 +14,8 @@ public class RectUtil : MonoBehaviour
     public RectTransform[] UIObjects;
     public GameObject[] Targets;
 
-
+    public RectTransform[] UIObjects_2;
+    public GameObject[] Targets_2;
 
 
     void Awake()
@@ -82,6 +83,23 @@ public class RectUtil : MonoBehaviour
 
 
             UIObjects[i].anchoredPosition = WorldObject_ScreenPosition;
+
+
+
+
+        }
+
+        for (int i = 0; i < Targets_2.Length; i++)
+        {
+
+
+            Vector2 ViewportPosition = MainCam.WorldToViewportPoint(Targets_2[i].transform.position);
+            Vector2 WorldObject_ScreenPosition = new Vector2(
+            ((ViewportPosition.x * CanvasRect.sizeDelta.x) - (CanvasRect.sizeDelta.x * 0.5f)),
+            ((ViewportPosition.y * CanvasRect.sizeDelta.y) - (CanvasRect.sizeDelta.y * 0.5f)));
+
+
+            UIObjects_2[i].anchoredPosition = WorldObject_ScreenPosition;
 
 
 
