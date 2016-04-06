@@ -13,6 +13,14 @@ public class UIScript : MonoBehaviour {
     public GameObject Land_Object;
     bool Land_State;
 
+    //Landmarks
+    public Animator Apart_Animator;
+    public GameObject Apart_Object;
+    bool Apart_State;
+
+
+
+
 	// Use this for initialization
 	void Start () {
 	
@@ -23,6 +31,12 @@ public class UIScript : MonoBehaviour {
 	
 	}
 
+    public void CloseAndHideApartPanel()
+    {
+        Apart_Animator.SetBool("Open", false);
+        Apart_Object.SetActive(false);
+        Apart_State = false;
+    }
     public void CloseAndHideLandPanel()
     {
         Land_Animator.SetBool("Open", false);
@@ -35,6 +49,10 @@ public class UIScript : MonoBehaviour {
         Amen_Object.SetActive(false);
         Amen_State = false;
     }
+    public void ShowApartPanel()
+    {
+        Apart_Object.SetActive(true);
+    }
     public void ShowLandPanel()
     {
         Land_Object.SetActive(true);
@@ -44,6 +62,18 @@ public class UIScript : MonoBehaviour {
         Amen_Object.SetActive(true);
     }
 
+    public void ToggleApartPanel()
+    {
+        if (Apart_State)
+        {
+            Apart_Animator.SetBool("Open", false);
+        }
+        else
+        {
+            Apart_Animator.SetBool("Open", true);
+        }
+        Apart_State = !Apart_State;
+    }
     public void ToggleLandPanel()
     {
         if (Land_State)
