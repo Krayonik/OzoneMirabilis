@@ -10,7 +10,6 @@ GameObject:
   - 4: {fileID: 474558}
   - 33: {fileID: 3395304}
   - 23: {fileID: 2391318}
-  - 65: {fileID: 6596054}
   m_Layer: 0
   m_Name: OM_3BHK_R_Living_Center_Table_Top
   m_TagString: Untagged
@@ -87,7 +86,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 166678}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.312, y: 0.277, z: -0.5505894}
+  m_LocalPosition: {x: 0.721, y: 0.264, z: 0.533}
   m_LocalScale: {x: 0.0328084, y: 0.0328084, z: 0.0328084}
   m_Children:
   - {fileID: 452434}
@@ -218,18 +217,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 116950}
   m_Mesh: {fileID: 4300004, guid: 49b5a9ed59da564408637ccc6e77f8c7, type: 3}
---- !u!65 &6596054
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 116950}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 21.531979, y: 3.8290913, z: 21.531975}
-  m_Center: {x: 0, y: -0.0000009536743, z: 0}
 --- !u!95 &9527806
 Animator:
   serializedVersion: 3
