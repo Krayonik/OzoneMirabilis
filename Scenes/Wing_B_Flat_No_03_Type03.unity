@@ -6895,12 +6895,16 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400064, guid: bc99a95269a2d574981f11ddcc43b6d1, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100048, guid: bc99a95269a2d574981f11ddcc43b6d1, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2300006, guid: bc99a95269a2d574981f11ddcc43b6d1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 48a749deb0eeb34408c3a40616c10cf3, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bc99a95269a2d574981f11ddcc43b6d1, type: 3}
   m_IsPrefabParent: 0
