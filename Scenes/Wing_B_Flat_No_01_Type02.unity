@@ -7203,6 +7203,48 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 412006, guid: b52d04c9c9b74df428e4c13e47850605, type: 2}
   m_PrefabInternal: {fileID: 1104691989}
+--- !u!1001 &1108112533
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 477294, guid: b25ec5936b455054697619e4ec7724ab, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -5.235
+      objectReference: {fileID: 0}
+    - target: {fileID: 477294, guid: b25ec5936b455054697619e4ec7724ab, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 477294, guid: b25ec5936b455054697619e4ec7724ab, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -4.226
+      objectReference: {fileID: 0}
+    - target: {fileID: 477294, guid: b25ec5936b455054697619e4ec7724ab, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 477294, guid: b25ec5936b455054697619e4ec7724ab, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 477294, guid: b25ec5936b455054697619e4ec7724ab, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 477294, guid: b25ec5936b455054697619e4ec7724ab, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: -0.00000016292068
+      objectReference: {fileID: 0}
+    - target: {fileID: 477294, guid: b25ec5936b455054697619e4ec7724ab, type: 2}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: b25ec5936b455054697619e4ec7724ab, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1109373165
 GameObject:
   m_ObjectHideFlags: 0
@@ -8239,6 +8281,10 @@ Transform:
   - {fileID: 1328994408}
   - {fileID: 573336526}
   - {fileID: 634088619}
+  - {fileID: 1644864989}
+  - {fileID: 1401041714}
+  - {fileID: 620133121}
+  - {fileID: 180005194}
   - {fileID: 219558558}
   - {fileID: 157360202}
   - {fileID: 35612239}
@@ -8246,18 +8292,14 @@ Transform:
   - {fileID: 427012105}
   - {fileID: 1537870840}
   - {fileID: 67439328}
-  - {fileID: 1644864989}
-  - {fileID: 1401041714}
-  - {fileID: 180005194}
+  - {fileID: 1854953556}
+  - {fileID: 2099101748}
   - {fileID: 247274137}
   - {fileID: 303330729}
   - {fileID: 1735901894}
   - {fileID: 1892587944}
   - {fileID: 477108411}
   - {fileID: 260001087}
-  - {fileID: 620133121}
-  - {fileID: 1854953556}
-  - {fileID: 2099101748}
   - {fileID: 301481803}
   - {fileID: 1502124254}
   - {fileID: 1078615199}
@@ -12760,9 +12802,6 @@ Transform:
   - {fileID: 2131632627}
   - {fileID: 1651291552}
   - {fileID: 1952296832}
-  - {fileID: 333396810}
-  - {fileID: 389667621}
-  - {fileID: 1236093056}
   - {fileID: 1491512292}
   - {fileID: 1126653555}
   - {fileID: 1330622676}
@@ -12778,11 +12817,14 @@ Transform:
   - {fileID: 366377632}
   - {fileID: 2120148631}
   - {fileID: 1842678298}
+  - {fileID: 333396810}
+  - {fileID: 389667621}
   - {fileID: 1528785834}
-  - {fileID: 2095247395}
   - {fileID: 668375501}
+  - {fileID: 2095247395}
   - {fileID: 1125039686}
   - {fileID: 1139578570}
+  - {fileID: 1236093056}
   - {fileID: 41628311}
   - {fileID: 1592216444}
   - {fileID: 976702116}
