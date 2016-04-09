@@ -2,6 +2,8 @@
 using UnityEditor;
 using System.Collections;
 using System.IO;
+using UnityEngine.SceneManagement;
+using UnityEditor.SceneManagement;
 
 public class SceneManagementEditor : EditorWindow {
 
@@ -40,7 +42,7 @@ public class SceneManagementEditor : EditorWindow {
             string[] StringToBeFed = Scenes[i].Split(delimiters);
             if (GUILayout.Button(StringToBeFed[5]))
             {
-                Application.LoadLevel(Scenes[i]);
+                EditorSceneManager.OpenScene(Scenes[i]);
             }
         }
 
