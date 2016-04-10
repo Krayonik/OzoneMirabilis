@@ -44,6 +44,7 @@ public class SceneManagementEditor : EditorWindow {
             string[] StringToBeFed = Scenes[i].Split(delimiters);
             if (GUILayout.Button(StringToBeFed[5]))
             {
+                EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo();
                 EditorSceneManager.OpenScene(Scenes[i]);
             }
         }
