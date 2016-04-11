@@ -116,7 +116,8 @@ public class MaterialManager : MonoBehaviour {
     [SerializeField]
     public Material[] Contemp_BathroomWindowFrames;
 
-
+    [SerializeField]
+    public ReflectionProbe[] ReflectionProbes;
 	// Use this for initialization
 	void Start () {
 
@@ -200,11 +201,20 @@ public class MaterialManager : MonoBehaviour {
 	
 	}
 
+    public void RenderProbes()
+    {
+        foreach (var item in ReflectionProbes)
+        {
+            item.RenderProbe();
+        }
+    }
+
     public void Fly_Mode(bool hide)
     {
         if(hide)
         {
             WorldCanvas.SetActive(true);
+            RenderProbes();
             foreach (var item in Objects_To_Hide)
             {
                 item.SetActive(false);
@@ -213,6 +223,7 @@ public class MaterialManager : MonoBehaviour {
         else
         {
             WorldCanvas.SetActive(false);
+            RenderProbes();
             foreach (var item in Objects_To_Hide)
             {
                 item.SetActive(true);
@@ -259,7 +270,7 @@ public class MaterialManager : MonoBehaviour {
         {
             item.materials = Retro_BathroomWindowFrames;
         }
-        
+        RenderProbes();
     }
     public void Wing_A_FlatNo_01_Type01_Danish()
     {
@@ -291,6 +302,7 @@ public class MaterialManager : MonoBehaviour {
         {
             item.materials = Danish_BathroomWindowFrames;
         }
+        RenderProbes();
     }
     public void Wing_A_FlatNo_01_Type01_Contemp()
     {
@@ -322,6 +334,7 @@ public class MaterialManager : MonoBehaviour {
         {
             item.materials = Contemp_BathroomWindowFrames;
         }
+        RenderProbes();
     }
 
 
