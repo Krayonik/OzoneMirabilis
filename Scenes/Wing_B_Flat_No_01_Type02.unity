@@ -662,15 +662,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 456860, guid: 6116662417bab734380e104c2880aaf6, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -3.7
+      value: -2.8525
       objectReference: {fileID: 0}
     - target: {fileID: 456860, guid: 6116662417bab734380e104c2880aaf6, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.185
+      value: 1.0875
       objectReference: {fileID: 0}
     - target: {fileID: 456860, guid: 6116662417bab734380e104c2880aaf6, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -0.29
+      value: -1.3149999
       objectReference: {fileID: 0}
     - target: {fileID: 456860, guid: 6116662417bab734380e104c2880aaf6, type: 2}
       propertyPath: m_LocalRotation.x
@@ -678,7 +678,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 456860, guid: 6116662417bab734380e104c2880aaf6, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 456860, guid: 6116662417bab734380e104c2880aaf6, type: 2}
       propertyPath: m_LocalRotation.z
@@ -686,11 +686,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 456860, guid: 6116662417bab734380e104c2880aaf6, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: -0.00000016292068
       objectReference: {fileID: 0}
     - target: {fileID: 456860, guid: 6116662417bab734380e104c2880aaf6, type: 2}
       propertyPath: m_RootOrder
-      value: 49
+      value: 42
       objectReference: {fileID: 0}
     - target: {fileID: 456860, guid: 6116662417bab734380e104c2880aaf6, type: 2}
       propertyPath: m_LocalScale.z
@@ -2358,6 +2358,8 @@ MonoBehaviour:
   - {fileID: 1727547152}
   - {fileID: 216874062}
   - {fileID: 1527929685}
+  Objects_To_Hide: []
+  WorldCanvas: {fileID: 0}
   Roof1: {fileID: 59132778}
   Roof2: {fileID: 604703011}
   Roof3: {fileID: 1727547154}
@@ -2499,6 +2501,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: f38d51fe15f948442b5275cf3afe6523, type: 2}
   Contemp_BathroomWindowFrames:
   - {fileID: 2100000, guid: f38d51fe15f948442b5275cf3afe6523, type: 2}
+  ReflectionProbes: []
 --- !u!4 &328421502
 Transform:
   m_ObjectHideFlags: 0
@@ -9726,15 +9729,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 481168, guid: 975699a17aaacaf4a96b73abcf46689d, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -6.593
+      value: -6.595
       objectReference: {fileID: 0}
     - target: {fileID: 481168, guid: 975699a17aaacaf4a96b73abcf46689d, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.912
+      value: 1.9124999
       objectReference: {fileID: 0}
     - target: {fileID: 481168, guid: 975699a17aaacaf4a96b73abcf46689d, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -1.776
+      value: -1.775
       objectReference: {fileID: 0}
     - target: {fileID: 481168, guid: 975699a17aaacaf4a96b73abcf46689d, type: 2}
       propertyPath: m_LocalRotation.x
@@ -10734,7 +10737,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 411946, guid: e8b65bddf5befdb47842bb3b6dfad3cb, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0.7071068
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 411946, guid: e8b65bddf5befdb47842bb3b6dfad3cb, type: 2}
       propertyPath: m_LocalRotation.z
@@ -10746,7 +10749,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 411946, guid: e8b65bddf5befdb47842bb3b6dfad3cb, type: 2}
       propertyPath: m_RootOrder
-      value: 32
+      value: 31
       objectReference: {fileID: 0}
     - target: {fileID: 130708, guid: e8b65bddf5befdb47842bb3b6dfad3cb, type: 2}
       propertyPath: m_IsActive
