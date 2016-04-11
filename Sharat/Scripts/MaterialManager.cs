@@ -372,6 +372,8 @@ public class MaterialManager : MonoBehaviour {
             item.materials = Retro_BathroomWindowFrames;
         }
 
+        RenderProbes();
+
     }
     public void Wing_A_FlatNo_01_Type02_Danish()
     {
@@ -403,6 +405,7 @@ public class MaterialManager : MonoBehaviour {
         {
             item.materials = Danish_BathroomWindowFrames;
         }
+        RenderProbes();
     }
     public void Wing_A_FlatNo_01_Type02_Contemp()
     {
@@ -434,6 +437,7 @@ public class MaterialManager : MonoBehaviour {
         {
             item.materials = Contemp_BathroomWindowFrames;
         }
+        RenderProbes();
     }
 
 
