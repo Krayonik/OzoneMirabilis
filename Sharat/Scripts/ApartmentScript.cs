@@ -7,10 +7,12 @@ public class ApartmentScript : MonoBehaviour {
     public GameObject WalkCam;
 
     public GameObject Roof;
+    public GameObject _target;
 
 	// Use this for initialization
 	void Start () {
 
+        _target = this.gameObject;
 
         FlyMode();
 
@@ -18,6 +20,8 @@ public class ApartmentScript : MonoBehaviour {
 	
     public void WalkMode()
     {
+        _target.SendMessage("Fly_Mode", false);
+
         Roof.SetActive(true);
 
         WalkCam.SetActive(true);
@@ -26,6 +30,8 @@ public class ApartmentScript : MonoBehaviour {
 
     public void FlyMode()
     {
+        _target.SendMessage("Fly_Mode", true);
+
         Roof.SetActive(false);
 
         WalkCam.SetActive(false);

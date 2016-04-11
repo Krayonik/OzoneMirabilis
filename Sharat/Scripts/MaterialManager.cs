@@ -13,6 +13,10 @@ public class MaterialManager : MonoBehaviour {
     public GameObject Props_Contemp;
     [SerializeField]
     public GameObject[] Retro_False_Roof;
+    [SerializeField]
+    public GameObject[] Objects_To_Hide;
+    [SerializeField]
+    public GameObject WorldCanvas;
 
     [SerializeField]
     public Renderer Roof1;
@@ -195,6 +199,27 @@ public class MaterialManager : MonoBehaviour {
 	void Update () {
 	
 	}
+
+    public void Fly_Mode(bool hide)
+    {
+        if(hide)
+        {
+            WorldCanvas.SetActive(true);
+            foreach (var item in Objects_To_Hide)
+            {
+                item.SetActive(false);
+            }
+        }
+        else
+        {
+            WorldCanvas.SetActive(false);
+            foreach (var item in Objects_To_Hide)
+            {
+                item.SetActive(true);
+            }
+        }
+    }
+
 
 
     //*******************
