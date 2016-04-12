@@ -138,10 +138,10 @@ public class MatManagerWindow : EditorWindow {
     void OnGUI () 
     {
 
-        if(serializedObj.targetObject ==  null)
-        {
-            OnEnable();
-        }
+        //if(serializedObj.targetObject ==  null)
+        //{
+        //    OnEnable();
+        //}
 
         serializedObj.Update();
 
