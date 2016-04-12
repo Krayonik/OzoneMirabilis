@@ -61,6 +61,8 @@ public class MatManagerWindow : EditorWindow {
         EditorWindow.GetWindow(typeof(MatManagerWindow));
     }
 
+    
+
     void OnEnable()
     {
         ScriptObject = GameObject.Find("ScriptObject");
@@ -135,6 +137,12 @@ public class MatManagerWindow : EditorWindow {
 
     void OnGUI () 
     {
+
+        if(serializedObj.targetObject ==  null)
+        {
+            OnEnable();
+        }
+
         serializedObj.Update();
 
         scrollPos = EditorGUILayout.BeginScrollView(scrollPos);
