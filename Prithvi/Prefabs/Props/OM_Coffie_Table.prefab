@@ -1,31 +1,15 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &100272
+--- !u!1 &125382
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 465816}
-  - 95: {fileID: 9520198}
-  m_Layer: 0
-  m_Name: OM_Coffie_Table
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &100334
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 405362}
-  - 33: {fileID: 3350914}
-  - 23: {fileID: 2365218}
+  - 4: {fileID: 458016}
+  - 33: {fileID: 3359484}
+  - 23: {fileID: 2323838}
   m_Layer: 0
   m_Name: OM_Coffie_Table 1
   m_TagString: Untagged
@@ -33,37 +17,53 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &405362
+--- !u!1 &159560
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 489248}
+  - 95: {fileID: 9576522}
+  m_Layer: 0
+  m_Name: OM_Coffie_Table
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &458016
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100334}
+  m_GameObject: {fileID: 125382}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 465816}
+  m_Father: {fileID: 489248}
   m_RootOrder: 0
---- !u!4 &465816
+--- !u!4 &489248
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100272}
+  m_GameObject: {fileID: 159560}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.633435, y: 0.27882734, z: 1.6407825}
   m_LocalScale: {x: 0.0328084, y: 0.0328084, z: 0.0328084}
   m_Children:
-  - {fileID: 405362}
+  - {fileID: 458016}
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!23 &2365218
+--- !u!23 &2323838
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100334}
+  m_GameObject: {fileID: 125382}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -84,20 +84,20 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!33 &3350914
+--- !u!33 &3359484
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100334}
+  m_GameObject: {fileID: 125382}
   m_Mesh: {fileID: 4300000, guid: 46d9f78e5fcf78148a214f6f3c7d0712, type: 3}
---- !u!95 &9520198
+--- !u!95 &9576522
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100272}
+  m_GameObject: {fileID: 159560}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 46d9f78e5fcf78148a214f6f3c7d0712, type: 3}
   m_Controller: {fileID: 0}
@@ -117,5 +117,5 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 100272}
+  m_RootGameObject: {fileID: 159560}
   m_IsPrefabParent: 1
