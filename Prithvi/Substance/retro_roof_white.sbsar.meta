@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: e0b390908678af54888eb4a3abc8ad11
-timeCreated: 1459583573
+timeCreated: 1461306425
 licenseType: Free
 SubstanceImporter:
   serializedVersion: 5
@@ -9,7 +9,7 @@ SubstanceImporter:
     name: retro_roof_white
     prototypeName: retro_roof_white
     shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-    shaderKeywords: _METALLICGLOSSMAP _NORMALMAP
+    shaderKeywords: _NORMALMAP
     renderQueue: -1
     lightmapFlags: 5
     inputs:
@@ -42,7 +42,7 @@ SubstanceImporter:
             name: _BumpMap
           second:
             texture: {instanceID: 0}
-            scale: {x: 8, y: 1}
+            scale: {x: 8, y: 8}
             offset: {x: 0, y: 0}
         data:
           first:
@@ -91,7 +91,7 @@ SubstanceImporter:
             name: _MetallicGlossMap
           second:
             texture: {instanceID: 0}
-            scale: {x: 8, y: 1}
+            scale: {x: 8, y: 8}
             offset: {x: 0, y: 0}
       floats:
         data:
@@ -117,7 +117,7 @@ SubstanceImporter:
         data:
           first:
             name: _Glossiness
-          second: 0.5
+          second: 0
         data:
           first:
             name: _BumpScale
