@@ -50,8 +50,8 @@ LightmapSettings:
     m_AlbedoBoost: 1
     m_TemporalCoherenceThreshold: 1
     m_EnvironmentLightingMode: 0
-    m_EnableBakedLightmaps: 1
-    m_EnableRealtimeLightmaps: 1
+    m_EnableBakedLightmaps: 0
+    m_EnableRealtimeLightmaps: 0
   m_LightmapEditorSettings:
     serializedVersion: 3
     m_Resolution: 2
@@ -930,6 +930,140 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 139677068}
+--- !u!1001 &150807703
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 814392580}
+    m_Modifications:
+    - target: {fileID: 400058, guid: 0f4dff65c1001cf4886b9208c0715041, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400058, guid: 0f4dff65c1001cf4886b9208c0715041, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400058, guid: 0f4dff65c1001cf4886b9208c0715041, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400058, guid: 0f4dff65c1001cf4886b9208c0715041, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400058, guid: 0f4dff65c1001cf4886b9208c0715041, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400058, guid: 0f4dff65c1001cf4886b9208c0715041, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400058, guid: 0f4dff65c1001cf4886b9208c0715041, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400058, guid: 0f4dff65c1001cf4886b9208c0715041, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 0f4dff65c1001cf4886b9208c0715041, type: 3}
+  m_IsPrefabParent: 0
+--- !u!4 &150807704 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400058, guid: 0f4dff65c1001cf4886b9208c0715041, type: 3}
+  m_PrefabInternal: {fileID: 150807703}
+--- !u!23 &150807705 stripped
+MeshRenderer:
+  m_PrefabParentObject: {fileID: 2300048, guid: 0f4dff65c1001cf4886b9208c0715041,
+    type: 3}
+  m_PrefabInternal: {fileID: 150807703}
+--- !u!23 &150807706 stripped
+MeshRenderer:
+  m_PrefabParentObject: {fileID: 2300046, guid: 0f4dff65c1001cf4886b9208c0715041,
+    type: 3}
+  m_PrefabInternal: {fileID: 150807703}
+--- !u!23 &150807707 stripped
+MeshRenderer:
+  m_PrefabParentObject: {fileID: 2300036, guid: 0f4dff65c1001cf4886b9208c0715041,
+    type: 3}
+  m_PrefabInternal: {fileID: 150807703}
+--- !u!23 &150807708 stripped
+MeshRenderer:
+  m_PrefabParentObject: {fileID: 2300042, guid: 0f4dff65c1001cf4886b9208c0715041,
+    type: 3}
+  m_PrefabInternal: {fileID: 150807703}
+--- !u!23 &150807709 stripped
+MeshRenderer:
+  m_PrefabParentObject: {fileID: 2300044, guid: 0f4dff65c1001cf4886b9208c0715041,
+    type: 3}
+  m_PrefabInternal: {fileID: 150807703}
+--- !u!23 &150807710 stripped
+MeshRenderer:
+  m_PrefabParentObject: {fileID: 2300034, guid: 0f4dff65c1001cf4886b9208c0715041,
+    type: 3}
+  m_PrefabInternal: {fileID: 150807703}
+--- !u!23 &150807711 stripped
+MeshRenderer:
+  m_PrefabParentObject: {fileID: 2300040, guid: 0f4dff65c1001cf4886b9208c0715041,
+    type: 3}
+  m_PrefabInternal: {fileID: 150807703}
+--- !u!23 &150807712 stripped
+MeshRenderer:
+  m_PrefabParentObject: {fileID: 2300038, guid: 0f4dff65c1001cf4886b9208c0715041,
+    type: 3}
+  m_PrefabInternal: {fileID: 150807703}
+--- !u!1 &150807713 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100024, guid: 0f4dff65c1001cf4886b9208c0715041, type: 3}
+  m_PrefabInternal: {fileID: 150807703}
+--- !u!23 &150807714 stripped
+MeshRenderer:
+  m_PrefabParentObject: {fileID: 2300016, guid: 0f4dff65c1001cf4886b9208c0715041,
+    type: 3}
+  m_PrefabInternal: {fileID: 150807703}
+--- !u!1 &150807715 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100022, guid: 0f4dff65c1001cf4886b9208c0715041, type: 3}
+  m_PrefabInternal: {fileID: 150807703}
+--- !u!23 &150807716 stripped
+MeshRenderer:
+  m_PrefabParentObject: {fileID: 2300014, guid: 0f4dff65c1001cf4886b9208c0715041,
+    type: 3}
+  m_PrefabInternal: {fileID: 150807703}
+--- !u!23 &150807717 stripped
+MeshRenderer:
+  m_PrefabParentObject: {fileID: 2300032, guid: 0f4dff65c1001cf4886b9208c0715041,
+    type: 3}
+  m_PrefabInternal: {fileID: 150807703}
+--- !u!23 &150807718 stripped
+MeshRenderer:
+  m_PrefabParentObject: {fileID: 2300030, guid: 0f4dff65c1001cf4886b9208c0715041,
+    type: 3}
+  m_PrefabInternal: {fileID: 150807703}
+--- !u!23 &150807719 stripped
+MeshRenderer:
+  m_PrefabParentObject: {fileID: 2300028, guid: 0f4dff65c1001cf4886b9208c0715041,
+    type: 3}
+  m_PrefabInternal: {fileID: 150807703}
+--- !u!23 &150807720 stripped
+MeshRenderer:
+  m_PrefabParentObject: {fileID: 2300026, guid: 0f4dff65c1001cf4886b9208c0715041,
+    type: 3}
+  m_PrefabInternal: {fileID: 150807703}
+--- !u!23 &150807721 stripped
+MeshRenderer:
+  m_PrefabParentObject: {fileID: 2300004, guid: 0f4dff65c1001cf4886b9208c0715041,
+    type: 3}
+  m_PrefabInternal: {fileID: 150807703}
+--- !u!23 &150807722 stripped
+MeshRenderer:
+  m_PrefabParentObject: {fileID: 2300002, guid: 0f4dff65c1001cf4886b9208c0715041,
+    type: 3}
+  m_PrefabInternal: {fileID: 150807703}
 --- !u!1001 &160412988
 Prefab:
   m_ObjectHideFlags: 0
@@ -1817,6 +1951,7 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -1831,8 +1966,8 @@ RectTransform:
   m_LocalScale: {x: 0.01, y: 0.009999994, z: 0.009999994}
   m_Children:
   - {fileID: 74803197}
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_Father: {fileID: 814392580}
+  m_RootOrder: 7
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: -0.02, y: 2.97}
@@ -2047,6 +2182,129 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e50e925fb93c78246bf995d9dc3a2330, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  type: 3
+  adaptiveTextureSize: 256
+  remapCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  exposureAdjustment: 1.5
+  middleGrey: 0.4
+  white: 2
+  adaptionSpeed: 1.5
+  tonemapper: {fileID: 0}
+  validRenderTextureFormat: 1
+--- !u!114 &284835072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 284835070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0923359e9e352a4b9b11c7b7161ad67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Radius: 0.4
+  m_SampleCount: 1
+  m_OcclusionIntensity: 1
+  m_Blur: 4
+  m_Downsampling: 2
+  m_OcclusionAttenuation: 1
+  m_MinZ: 0.01
+  m_SSAOShader: {fileID: 4800000, guid: 43ca18288c424f645aaa1e9e07f04c50, type: 3}
+  m_RandomTexture: {fileID: 2800000, guid: a181ca8e3c62f3e4b8f183f6c586b032, type: 3}
+--- !u!114 &284835073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 284835070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da3ff4a1bef2e8d47a1dfb734aa54de1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  settings:
+    basicSettings:
+      reflectionMultiplier: 1
+      maxDistance: 100
+      fadeDistance: 100
+      screenEdgeFading: 0.03
+      enableHDR: 1
+      additiveReflection: 0
+    reflectionSettings:
+      maxSteps: 128
+      rayStepSize: 3
+      widthModifier: 0.5
+      smoothFallbackThreshold: 0.2
+      smoothFallbackDistance: 0.05
+      fresnelFade: 0.2
+      fresnelFadePower: 2
+      distanceBlur: 1
+    advancedSettings:
+      temporalFilterStrength: 0.7
+      useTemporalConfidence: 1
+      traceBehindObjects: 1
+      highQualitySharpReflections: 1
+      traceEverywhere: 1
+      treatBackfaceHitAsMiss: 0
+      allowBackwardsRays: 0
+      improveCorners: 1
+      resolution: 1
+      bilateralUpsample: 1
+      reduceBanding: 1
+      highlightSuppression: 0
+    debugSettings:
+      debugMode: 0
+  m_Shader: {fileID: 4800000, guid: 7e2fcc83af19e744787647ec0ac5d42c, type: 3}
+--- !u!114 &284835074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 284835070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdc35e0180670ab4e8d2f9439137791f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SMAA:
+    settings:
+      debugPass: 0
+      quality: 2
+      edgeDetectionMethod: 2
+    quality:
+      diagonalDetection: 1
+      cornerDetection: 1
+      threshold: 0.1
+      depthThreshold: 0.01
+      maxSearchSteps: 16
+      maxDiagonalSearchSteps: 8
+      cornerRounding: 25
+      localContrastAdaptationFactor: 2
+    predication:
+      enabled: 0
+      threshold: 0.01
+      scale: 2
+      strength: 0.4
+    temporal:
+      enabled: 0
+      fuzzSize: 2
+  m_FXAA:
+    preset:
+      qualitySettings:
+        subpixelAliasingRemovalAmount: 0.75
+        edgeDetectionThreshold: 0.166
+        minimumRequiredLuminance: 0.0833
+      consoleSettings:
+        subpixelSpreadAmount: 0.5
+        edgeSharpnessAmount: 8
+        edgeDetectionThreshold: 0.125
+        minimumRequiredLuminance: 0.05
+  m_Method: 0
 --- !u!4 &284835076 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
@@ -2217,6 +2475,7 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -4835,6 +5094,9 @@ Transform:
   - {fileID: 1081466441}
   - {fileID: 1928284018}
   - {fileID: 116278896}
+  - {fileID: 150807704}
+  - {fileID: 223001471}
+  - {fileID: 1865208662}
   m_Father: {fileID: 0}
   m_RootOrder: 1
 --- !u!1001 &815879155
@@ -8162,6 +8424,22 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 493408, guid: 6fc05e32301f8a24ca66deda8351553f, type: 2}
   m_PrefabInternal: {fileID: 1479477282}
+--- !u!1 &1481887576 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100044, guid: 0f4dff65c1001cf4886b9208c0715041, type: 3}
+  m_PrefabInternal: {fileID: 150807703}
+--- !u!65 &1481887579
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1481887576}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.9387827, y: 0.099999994, z: 7.7456126}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1489917232
 Prefab:
   m_ObjectHideFlags: 0
@@ -10327,87 +10605,13 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1.0207596
       objectReference: {fileID: 0}
+    - target: {fileID: 100058, guid: b5434a9e811e5b34499e80d02678c1a0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b5434a9e811e5b34499e80d02678c1a0, type: 3}
   m_IsPrefabParent: 0
---- !u!23 &1828102938 stripped
-MeshRenderer:
-  m_PrefabParentObject: {fileID: 2300004, guid: b5434a9e811e5b34499e80d02678c1a0,
-    type: 3}
-  m_PrefabInternal: {fileID: 1828102937}
---- !u!23 &1828102939 stripped
-MeshRenderer:
-  m_PrefabParentObject: {fileID: 2300002, guid: b5434a9e811e5b34499e80d02678c1a0,
-    type: 3}
-  m_PrefabInternal: {fileID: 1828102937}
---- !u!23 &1828102940 stripped
-MeshRenderer:
-  m_PrefabParentObject: {fileID: 2300044, guid: b5434a9e811e5b34499e80d02678c1a0,
-    type: 3}
-  m_PrefabInternal: {fileID: 1828102937}
---- !u!23 &1828102941 stripped
-MeshRenderer:
-  m_PrefabParentObject: {fileID: 2300042, guid: b5434a9e811e5b34499e80d02678c1a0,
-    type: 3}
-  m_PrefabInternal: {fileID: 1828102937}
---- !u!23 &1828102942 stripped
-MeshRenderer:
-  m_PrefabParentObject: {fileID: 2300034, guid: b5434a9e811e5b34499e80d02678c1a0,
-    type: 3}
-  m_PrefabInternal: {fileID: 1828102937}
---- !u!23 &1828102943 stripped
-MeshRenderer:
-  m_PrefabParentObject: {fileID: 2300032, guid: b5434a9e811e5b34499e80d02678c1a0,
-    type: 3}
-  m_PrefabInternal: {fileID: 1828102937}
---- !u!23 &1828102944 stripped
-MeshRenderer:
-  m_PrefabParentObject: {fileID: 2300030, guid: b5434a9e811e5b34499e80d02678c1a0,
-    type: 3}
-  m_PrefabInternal: {fileID: 1828102937}
---- !u!23 &1828102945 stripped
-MeshRenderer:
-  m_PrefabParentObject: {fileID: 2300028, guid: b5434a9e811e5b34499e80d02678c1a0,
-    type: 3}
-  m_PrefabInternal: {fileID: 1828102937}
---- !u!23 &1828102946 stripped
-MeshRenderer:
-  m_PrefabParentObject: {fileID: 2300040, guid: b5434a9e811e5b34499e80d02678c1a0,
-    type: 3}
-  m_PrefabInternal: {fileID: 1828102937}
---- !u!23 &1828102947 stripped
-MeshRenderer:
-  m_PrefabParentObject: {fileID: 2300036, guid: b5434a9e811e5b34499e80d02678c1a0,
-    type: 3}
-  m_PrefabInternal: {fileID: 1828102937}
---- !u!23 &1828102948 stripped
-MeshRenderer:
-  m_PrefabParentObject: {fileID: 2300006, guid: b5434a9e811e5b34499e80d02678c1a0,
-    type: 3}
-  m_PrefabInternal: {fileID: 1828102937}
---- !u!23 &1828102949 stripped
-MeshRenderer:
-  m_PrefabParentObject: {fileID: 2300018, guid: b5434a9e811e5b34499e80d02678c1a0,
-    type: 3}
-  m_PrefabInternal: {fileID: 1828102937}
---- !u!23 &1828102950 stripped
-MeshRenderer:
-  m_PrefabParentObject: {fileID: 2300016, guid: b5434a9e811e5b34499e80d02678c1a0,
-    type: 3}
-  m_PrefabInternal: {fileID: 1828102937}
---- !u!23 &1828102951 stripped
-MeshRenderer:
-  m_PrefabParentObject: {fileID: 2300038, guid: b5434a9e811e5b34499e80d02678c1a0,
-    type: 3}
-  m_PrefabInternal: {fileID: 1828102937}
---- !u!1 &1828102952 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 100024, guid: b5434a9e811e5b34499e80d02678c1a0, type: 3}
-  m_PrefabInternal: {fileID: 1828102937}
---- !u!1 &1828102953 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 100022, guid: b5434a9e811e5b34499e80d02678c1a0, type: 3}
-  m_PrefabInternal: {fileID: 1828102937}
 --- !u!1 &1828102954 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100042, guid: b5434a9e811e5b34499e80d02678c1a0, type: 3}
@@ -10451,8 +10655,8 @@ Transform:
   m_Children:
   - {fileID: 658027276}
   - {fileID: 178471265}
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_Father: {fileID: 814392580}
+  m_RootOrder: 8
 --- !u!1001 &1866485852
 Prefab:
   m_ObjectHideFlags: 0
@@ -10628,6 +10832,9 @@ MonoBehaviour:
   WalkCam: {fileID: 284835069}
   Roof: {fileID: 450908766}
   _target: {fileID: 0}
+  _FloorPlan: {fileID: 0}
+  _FlatNumber: {fileID: 0}
+  _Lights: {fileID: 0}
 --- !u!4 &1928284018
 Transform:
   m_ObjectHideFlags: 0
@@ -10651,33 +10858,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cb60d79c43fb3e4bb19aa83cf0ae7c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FlatName: 
   Props_Retro: {fileID: 1081466440}
   Props_Danish: {fileID: 168602025}
   Props_Contemp: {fileID: 888438448}
   Retro_False_Roof:
-  - {fileID: 1828102953}
-  - {fileID: 1828102952}
+  - {fileID: 150807715}
+  - {fileID: 150807713}
   Objects_To_Hide: []
-  WorldCanvas: {fileID: 0}
-  Roof1: {fileID: 1828102951}
-  Roof2: {fileID: 1828102950}
-  Roof3: {fileID: 1828102949}
+  WorldCanvas: {fileID: 223001467}
+  Roof1: {fileID: 150807709}
+  Roof2: {fileID: 150807716}
+  Roof3: {fileID: 150807714}
   Roof4: {fileID: 0}
   Roof5: {fileID: 0}
-  Wall: {fileID: 1828102948}
-  Floor: {fileID: 1828102947}
-  Skirting: {fileID: 1828102946}
+  Wall: {fileID: 150807707}
+  Floor: {fileID: 150807710}
+  Skirting: {fileID: 150807708}
+  ModularWall1: {fileID: 150807712}
+  ModularWallSkirting1: {fileID: 150807711}
+  ModularWall2: {fileID: 0}
+  ModularWallSkirting2: {fileID: 0}
   Door_Frames:
-  - {fileID: 1828102945}
-  - {fileID: 1828102944}
-  - {fileID: 1828102943}
-  - {fileID: 1828102942}
+  - {fileID: 150807720}
+  - {fileID: 150807719}
+  - {fileID: 150807718}
+  - {fileID: 150807717}
   Window_Frames:
-  - {fileID: 1828102941}
-  - {fileID: 1828102940}
+  - {fileID: 150807706}
+  - {fileID: 150807705}
   Bathroom_Window_Frames:
-  - {fileID: 1828102939}
-  - {fileID: 1828102938}
+  - {fileID: 150807722}
+  - {fileID: 150807721}
   Retro_Roof1:
   - {fileID: 2100000, guid: 695f1fa55873eb9408be8ea28c1cb9cc, type: 2}
   - {fileID: 2100000, guid: 111d155c112a78741ac301094d6354ec, type: 2}
@@ -10703,6 +10915,10 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 82d94148dd671b346b341284ae2c6f9c, type: 2}
   Retro_Skirting:
   - {fileID: 2100000, guid: de65ad27f96d9fe408091249594beaed, type: 2}
+  - {fileID: 2100000, guid: 15bfe184db8f1554a90d737050690dc9, type: 2}
+  Retro_ModularWall:
+  - {fileID: 2100000, guid: 7adb24871227ec742b46ed0df2ef038b, type: 2}
+  Retro_ModularWallSkirting:
   - {fileID: 2100000, guid: 15bfe184db8f1554a90d737050690dc9, type: 2}
   Retro_DoorFrames:
   - {fileID: 2100000, guid: 2572f271ccbe7f3488b5e39d8e752ffc, type: 2}
@@ -10736,6 +10952,10 @@ MonoBehaviour:
   Danish_Skirting:
   - {fileID: 2100000, guid: ca9e1839183df614b9c24f6df4f97319, type: 2}
   - {fileID: 2100000, guid: 9d2b07a3e9a354040b5e4be160c9c045, type: 2}
+  Danish_ModularWall:
+  - {fileID: 2100000, guid: 1e2127d439a055e4da38a7ccd7ccf62d, type: 2}
+  Danish_ModularWallSkirting:
+  - {fileID: 2100000, guid: 9d2b07a3e9a354040b5e4be160c9c045, type: 2}
   Danish_DoorFrames:
   - {fileID: 2100000, guid: 772395a725e0ef34a97060a115cf6f6f, type: 2}
   Danish_WindowFrames:
@@ -10768,6 +10988,10 @@ MonoBehaviour:
   Contemp_Skirting:
   - {fileID: 2100000, guid: 964f79ee01a7d8542b330d744b7cf26b, type: 2}
   - {fileID: 2100000, guid: 213d0dbdeb6302f44a00187252ae1466, type: 2}
+  Contemp_ModularWall:
+  - {fileID: 2100000, guid: d913f7c09cef5da489b6dd27c0752855, type: 2}
+  Contemp_ModularWallSkirting:
+  - {fileID: 2100000, guid: 213d0dbdeb6302f44a00187252ae1466, type: 2}
   Contemp_DoorFrames:
   - {fileID: 2100000, guid: 5503508ed81ebaf4bb47dcf7e904ada8, type: 2}
   Contemp_WindowFrames:
@@ -10790,6 +11014,9 @@ MonoBehaviour:
   WalkCam: {fileID: 284835069}
   Roof: {fileID: 450908766}
   _target: {fileID: 0}
+  _FloorPlan: {fileID: 0}
+  _FlatNumber: {fileID: 0}
+  _Lights: {fileID: 0}
 --- !u!1001 &1939046382
 Prefab:
   m_ObjectHideFlags: 0

@@ -78,6 +78,8 @@ public class MaterialManager : MonoBehaviour {
     [SerializeField]
     public Material[] Retro_ModularWallSkirting;
     [SerializeField]
+    public Material[] Retro_ModularWallSkirting2;
+    [SerializeField]
     public Material[] Retro_DoorFrames;
     [SerializeField]
     public Material[] Retro_WindowFrames;
@@ -106,6 +108,8 @@ public class MaterialManager : MonoBehaviour {
     [SerializeField]
     public Material[] Danish_ModularWallSkirting;
     [SerializeField]
+    public Material[] Danish_ModularWallSkirting2;
+    [SerializeField]
     public Material[] Danish_DoorFrames;
     [SerializeField]
     public Material[] Danish_WindowFrames;
@@ -133,6 +137,8 @@ public class MaterialManager : MonoBehaviour {
     public Material[] Contemp_ModularWall;
     [SerializeField]
     public Material[] Contemp_ModularWallSkirting;
+    [SerializeField]
+    public Material[] Contemp_ModularWallSkirting2;
     [SerializeField]
     public Material[] Contemp_DoorFrames;
     [SerializeField]
@@ -255,6 +261,62 @@ public class MaterialManager : MonoBehaviour {
         }
     }
 
+
+    void ModularUpdate(int num,bool single)
+    {
+        switch(num)
+        {
+            case 1:
+                if(single)
+                {
+                    ModularWall1.materials = Retro_ModularWall;
+                    //ModularWall2.materials = Retro_ModularWall;
+                    ModularWallSkirting1.materials = Retro_ModularWallSkirting;
+                    //ModularWallSkirting2.materials = Retro_ModularWallSkirting;
+                }
+                else
+                {
+                    ModularWall1.materials = Retro_ModularWall;
+                    ModularWall2.materials = Retro_ModularWall;
+                    ModularWallSkirting1.materials = Retro_ModularWallSkirting;
+                    ModularWallSkirting2.materials = Retro_ModularWallSkirting2;
+                }
+                break;
+            case 2:
+                if (single)
+                {
+                    ModularWall1.materials = Danish_ModularWall;
+                    //ModularWall2.materials = Danish_ModularWall;
+                    ModularWallSkirting1.materials = Danish_ModularWallSkirting;
+                    //ModularWallSkirting2.materials = Danish_ModularWallSkirting;
+                }
+                else
+                {
+                    ModularWall1.materials = Danish_ModularWall;
+                    ModularWall2.materials = Danish_ModularWall;
+                    ModularWallSkirting1.materials = Danish_ModularWallSkirting;
+                    ModularWallSkirting2.materials = Danish_ModularWallSkirting2;
+                }
+                break;
+            case 3:
+                if (single)
+                {
+                    ModularWall1.materials = Contemp_ModularWall;
+                    //ModularWall2.materials = Contemp_ModularWall;
+                    ModularWallSkirting1.materials = Contemp_ModularWallSkirting;
+                    //ModularWallSkirting2.materials = Contemp_ModularWallSkirting;
+                }
+                else
+                {
+                    ModularWall1.materials = Contemp_ModularWall;
+                    ModularWall2.materials = Contemp_ModularWall;
+                    ModularWallSkirting1.materials = Contemp_ModularWallSkirting;
+                    ModularWallSkirting2.materials = Contemp_ModularWallSkirting2;
+                }
+                break;
+        }
+        
+    }
 
 
     //*******************
@@ -614,7 +676,7 @@ public class MaterialManager : MonoBehaviour {
         {
             item.materials = Retro_BathroomWindowFrames;
         }
-
+        ModularUpdate(1, true);
     }
     public void Wing_A_FlatNo_02_Type01_Retro()
     {
@@ -648,6 +710,8 @@ public class MaterialManager : MonoBehaviour {
             item.materials = Retro_BathroomWindowFrames;
         }
 
+        ModularUpdate(1, true);
+
     }
     public void Wing_A_FlatNo_02_Type01_Danish()
     {
@@ -679,6 +743,7 @@ public class MaterialManager : MonoBehaviour {
         {
             item.materials = Danish_BathroomWindowFrames;
         }
+        ModularUpdate(2, true);
     }
     public void Wing_A_FlatNo_02_Type01_Contemp()
     {
@@ -710,6 +775,7 @@ public class MaterialManager : MonoBehaviour {
         {
             item.materials = Contemp_BathroomWindowFrames;
         }
+        ModularUpdate(3, true);
     }
 
 
@@ -1162,6 +1228,7 @@ public class MaterialManager : MonoBehaviour {
         {
             item.materials = Retro_BathroomWindowFrames;
         }
+        ModularUpdate(1, false);
 
     }
     public void Wing_A_FlatNo_04_Type01_Retro()
@@ -1195,6 +1262,7 @@ public class MaterialManager : MonoBehaviour {
         {
             item.materials = Retro_BathroomWindowFrames;
         }
+        ModularUpdate(1, false);
 
     }
     public void Wing_A_FlatNo_04_Type01_Danish()
@@ -1227,6 +1295,7 @@ public class MaterialManager : MonoBehaviour {
         {
             item.materials = Danish_BathroomWindowFrames;
         }
+        ModularUpdate(2, false);
     }
     public void Wing_A_FlatNo_04_Type01_Contemp()
     {
@@ -1258,6 +1327,7 @@ public class MaterialManager : MonoBehaviour {
         {
             item.materials = Contemp_BathroomWindowFrames;
         }
+        ModularUpdate(3, false);
     }
 
 
