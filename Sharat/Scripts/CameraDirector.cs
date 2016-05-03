@@ -10,6 +10,37 @@ public class CameraDirector : MonoBehaviour {
     public KGFOrbitCamSettings ProjectViewSettings2;
     public KGFOrbitCamSettings ApartmentViewSettings;
 
+    public KGFOrbitCamSettings[] TypicalFloorplanSettings;
+    public KGFOrbitCamSettings[] Floor1Settings;
+    public KGFOrbitCamSettings[] Floor2Settings;
+    public KGFOrbitCamSettings[] Floor3Settings;
+    public KGFOrbitCamSettings[] Floor4Settings;
+    public KGFOrbitCamSettings[] Floor5Settings;
+    public KGFOrbitCamSettings[] Floor6Settings;
+    public KGFOrbitCamSettings[] Floor7Settings;
+    public KGFOrbitCamSettings[] Floor8Settings;
+    public KGFOrbitCamSettings[] Floor9Settings;
+    public KGFOrbitCamSettings[] Floor10Settings;
+    public KGFOrbitCamSettings[] Floor11Settings;
+    public KGFOrbitCamSettings[] Floor12Settings;
+    public KGFOrbitCamSettings[] Floor13Settings;
+    public KGFOrbitCamSettings[] Floor14Settings;
+
+    public GameObject[] Floor1OBJs;
+    public GameObject[] Floor2OBJs;
+    public GameObject[] Floor3OBJs;
+    public GameObject[] Floor4OBJs;
+    public GameObject[] Floor5OBJs;
+    public GameObject[] Floor6OBJs;
+    public GameObject[] Floor7OBJs;
+    public GameObject[] Floor8OBJs;
+    public GameObject[] Floor9OBJs;
+    public GameObject[] Floor10OBJs;
+    public GameObject[] Floor11OBJs;
+    public GameObject[] Floor12OBJs;
+    public GameObject[] Floor13OBJs;
+    public GameObject[] Floor14OBJs;
+
 
     public GameObject VR_Button;
     public GameObject Back_Button;
@@ -38,23 +69,80 @@ public class CameraDirector : MonoBehaviour {
     public ScrollRect ApartmentView_Rect;
     public RectTransform[] Content_Panels;
     public GameObject[] FloorObjects;
+    public GameObject[] FloorUnits;
+    public GameObject[] LandObjects;
+
+
+    public GameObject Elevation;
+    public int CurrFloor;
+    public GameObject CurrUnitObject;
 
     public enum MenuState
     {
         City,
         Project,
         Apartment,
+        FloorPlan,
         Unit
     };
+    
+    public void UnitSelecion(string name)
+    {
+        currState = MenuState.Unit;
+        switch(name)
+        {
+            case "A101":
+                foreach (var item in Floor1OBJs)
+                {
+                    if(item.tag != "A101")
+                    {
+                        item.SetActive(false);
+                    }
+                    else
+                    {
+                        CurrUnitObject = item;
+                    }
+                }
+                CurrUnitObject.transform.FindChild("ScriptObject").SendMessage("ActivateFlatNumber");
+                Floor1Settings[0].Apply();
+                break;
+        }
+    }
 
     public void FloorSelection(int num)
     {
+        CurrFloor = num;
+        if(CurrUnitObject!=null)
+        {
+            CurrUnitObject.transform.FindChild("ScriptObject").SendMessage("ActivateFloorPlan");
+        }
+        foreach (var item in FloorObjects)
+        {
+            item.SetActive(false);
+        }
+        
+        Hide_InnerAmen();
+        Hide_OutterAmen();
         foreach (var item in Content_Panels)
         {
             item.gameObject.SetActive(false);
         }
         Content_Panels[num - 1].gameObject.SetActive(true);
         ApartmentView_Rect.content = Content_Panels[num - 1];
+
+        switch(num)
+        {
+            case 1:
+                FloorUnits[0].SetActive(true);
+                foreach (var item in Floor1OBJs)
+                {
+                    item.SetActive(true);
+                }
+                TypicalFloorplanSettings[0].Apply();
+                Elevation.SetActive(false);
+                currState = MenuState.FloorPlan;
+                break;
+        }
     }
 
     private MenuState currState;
@@ -75,6 +163,9 @@ public class CameraDirector : MonoBehaviour {
                     break;
                 case MenuState.Apartment:
                     Event_ApartmentView();
+                    break;
+                case MenuState.FloorPlan:
+                    Event_FloorPlanView();
                     break;
                 case MenuState.Unit:
                     Event_UnitView();
@@ -109,6 +200,11 @@ public class CameraDirector : MonoBehaviour {
         
     }
 
+    void Event_FloorPlanView()
+    {
+
+    }
+
     void Event_UnitView()
     {
 
@@ -118,6 +214,10 @@ public class CameraDirector : MonoBehaviour {
     {
         StartCoroutine("LocationUIChange", true);
         foreach (var item in ToHideGOs)
+        {
+            item.SetActive(true);
+        }
+        foreach (var item in LandObjects)
         {
             item.SetActive(true);
         }
@@ -205,6 +305,10 @@ public class CameraDirector : MonoBehaviour {
         {
             item.SetActive(true);
         }
+        foreach (var item in LandObjects)
+        {
+            item.SetActive(false);
+        }
         foreach (var item in FloorObjects)
         {
             item.SetActive(false);
@@ -271,6 +375,12 @@ public class CameraDirector : MonoBehaviour {
 
         UIS = this.GetComponent<UIScript>();
 
+        foreach (var item in FloorUnits)
+        {
+            item.SetActive(false);
+            
+        }
+
         CurrState = MenuState.City;
 
 	}
@@ -300,6 +410,12 @@ public class CameraDirector : MonoBehaviour {
         Terrain_Mumbai.SetActive(false);
         VR_Button.SetActive(false);
         Back_Button.SetActive(true);
+        foreach (var item in FloorUnits)
+        {
+            item.SetActive(false);
+
+        }
+        Elevation.SetActive(true);
         CurrState = MenuState.Apartment;
     }
 	
@@ -309,6 +425,12 @@ public class CameraDirector : MonoBehaviour {
         {
             case MenuState.Project:
                 OnClick_CityView();
+                break;
+            case MenuState.FloorPlan:
+                OnClick_ApartmentView();
+                break;
+            case MenuState.Unit:
+                FloorSelection(CurrFloor);
                 break;
         }
     }

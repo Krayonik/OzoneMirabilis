@@ -5,6 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class MaterialManager : MonoBehaviour {
 
+
+
+    public string FlatName;
+
     [SerializeField]
     public GameObject Props_Retro;
     [SerializeField]
@@ -35,6 +39,14 @@ public class MaterialManager : MonoBehaviour {
     public Renderer Floor;
     [SerializeField]
     public Renderer Skirting;
+    [SerializeField]
+    public Renderer ModularWall1;
+    [SerializeField]
+    public Renderer ModularWallSkirting1;
+    [SerializeField]
+    public Renderer ModularWall2;
+    [SerializeField]
+    public Renderer ModularWallSkirting2;
 
     [SerializeField]
     public Renderer[] Door_Frames;
@@ -62,6 +74,10 @@ public class MaterialManager : MonoBehaviour {
     [SerializeField]
     public Material[] Retro_Skirting;
     [SerializeField]
+    public Material[] Retro_ModularWall;
+    [SerializeField]
+    public Material[] Retro_ModularWallSkirting;
+    [SerializeField]
     public Material[] Retro_DoorFrames;
     [SerializeField]
     public Material[] Retro_WindowFrames;
@@ -85,6 +101,10 @@ public class MaterialManager : MonoBehaviour {
     public Material[] Danish_Floors;
     [SerializeField]
     public Material[] Danish_Skirting;
+    [SerializeField]
+    public Material[] Danish_ModularWall;
+    [SerializeField]
+    public Material[] Danish_ModularWallSkirting;
     [SerializeField]
     public Material[] Danish_DoorFrames;
     [SerializeField]
@@ -110,6 +130,10 @@ public class MaterialManager : MonoBehaviour {
     [SerializeField]
     public Material[] Contemp_Skirting;
     [SerializeField]
+    public Material[] Contemp_ModularWall;
+    [SerializeField]
+    public Material[] Contemp_ModularWallSkirting;
+    [SerializeField]
     public Material[] Contemp_DoorFrames;
     [SerializeField]
     public Material[] Contemp_WindowFrames;
@@ -121,13 +145,13 @@ public class MaterialManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-        string levelName = SceneManager.GetActiveScene().name;
-
-        Debug.Log(levelName);
-        switch(levelName)
+        //string levelName = SceneManager.GetActiveScene().name;
+       
+        Debug.Log(FlatName);
+        switch (FlatName)
         {
             case "Wing_A_Flat_No_01_Type01":
-                Wing_A_FlatNo_01_Type01_Retro();
+                Wing_A_FlatNo_01_Type01_None();
                 break;
             case "Wing_A_Flat_No_01_Type02":
                 Wing_A_FlatNo_01_Type02_Retro();
@@ -136,13 +160,13 @@ public class MaterialManager : MonoBehaviour {
                 Wing_A_FlatNo_01_Type03_Retro();
                 break;
             case "Wing_A_Flat_No_02_Type01":
-                Wing_A_FlatNo_02_Type01_Retro();
+                Wing_A_FlatNo_02_Type01_None();
                 break;
             case "Wing_A_Flat_No_02_Type02":
                 Wing_A_FlatNo_02_Type02_Retro();
                 break;
             case "Wing_A_Flat_No_03_Type01":
-                Wing_A_FlatNo_03_Type01_Retro();
+                Wing_A_FlatNo_03_Type01_None();
                 break;
             case "Wing_A_Flat_No_03_Type02":
                 Wing_A_FlatNo_03_Type02_Retro();
@@ -151,7 +175,7 @@ public class MaterialManager : MonoBehaviour {
                 Wing_A_FlatNo_03_Type03_Retro();
                 break;
             case "Wing_A_Flat_No_04_Type01":
-                Wing_A_FlatNo_04_Type01_Retro();
+                Wing_A_FlatNo_04_Type01_None();
                 break;
             case "Wing_A_Flat_No_04_Type02":
                 Wing_A_FlatNo_04_Type01_Retro();
@@ -160,7 +184,7 @@ public class MaterialManager : MonoBehaviour {
                 Wing_A_FlatNo_04_Type03_Retro();
                 break;
             case "Wing_B_Flat_No_01_Type01":
-                Wing_B_FlatNo_01_Type01_Retro();
+                Wing_B_FlatNo_01_Type01_None();
                 break;
             case "Wing_B_Flat_No_01_Type02":
                 Wing_B_FlatNo_01_Type02_Retro();
@@ -169,13 +193,13 @@ public class MaterialManager : MonoBehaviour {
                 Wing_B_FlatNo_01_Type03_Retro();
                 break;
             case "Wing_B_Flat_No_02_Type01":
-                Wing_B_FlatNo_02_Type01_Retro();
+                Wing_B_FlatNo_02_Type01_None();
                 break;
             case "Wing_B_Flat_No_02_Type02":
                 Wing_B_FlatNo_02_Type02_Retro();
                 break;
             case "Wing_B_Flat_No_03_Type01":
-                Wing_B_FlatNo_03_Type01_Retro();
+                Wing_B_FlatNo_03_Type01_None();
                 break;
             case "Wing_B_Flat_No_03_Type02":
                 Wing_B_FlatNo_03_Type02_Retro();
@@ -184,7 +208,7 @@ public class MaterialManager : MonoBehaviour {
                 Wing_B_FlatNo_03_Type03_Retro();
                 break;
             case "Wing_B_Flat_No_04_Type01":
-                Wing_B_FlatNo_04_Type01_Retro();
+                Wing_B_FlatNo_04_Type01_None();
                 break;
             case "Wing_B_Flat_No_04_Type02":
                 Wing_B_FlatNo_04_Type01_Retro();
@@ -238,7 +262,31 @@ public class MaterialManager : MonoBehaviour {
     //*******************
 
     //Wing_A_FlatNo_01_Type01
-
+    public void Wing_A_FlatNo_01_Type01_None()
+    {
+        
+        Roof1.materials = Retro_Roof1;
+        Roof2.materials = Retro_Roof2;
+        Roof3.materials = Retro_Roof3;
+        Roof4.materials = Retro_Roof4;
+        Floor.materials = Retro_Floors;
+        Wall.materials = Retro_Walls;
+        Skirting.materials = Retro_Skirting;
+        
+        foreach (var item in Door_Frames)
+        {
+            item.materials = Retro_DoorFrames;
+        }
+        foreach (var item in Window_Frames)
+        {
+            item.materials = Retro_WindowFrames;
+        }
+        foreach (var item in Bathroom_Window_Frames)
+        {
+            item.materials = Retro_BathroomWindowFrames;
+        }
+        RenderProbes();
+    }
     public void Wing_A_FlatNo_01_Type01_Retro()
     {
         Props_Retro.SetActive(true);
@@ -257,7 +305,7 @@ public class MaterialManager : MonoBehaviour {
         Floor.materials = Retro_Floors;
         Wall.materials = Retro_Walls;
         Skirting.materials = Retro_Skirting;
-
+        
         foreach (var item in Door_Frames)
         {
             item.materials = Retro_DoorFrames;
@@ -543,7 +591,31 @@ public class MaterialManager : MonoBehaviour {
 
 
     //Wing_A_FlatNo_02_Type01
+    public void Wing_A_FlatNo_02_Type01_None()
+    {
+       
+        Roof1.materials = Retro_Roof1;
+        Roof2.materials = Retro_Roof2;
+        Roof3.materials = Retro_Roof3;
+        //Roof4.materials = Retro_Roof4;
+        Floor.materials = Retro_Floors;
+        Wall.materials = Retro_Walls;
+        Skirting.materials = Retro_Skirting;
 
+        foreach (var item in Door_Frames)
+        {
+            item.materials = Retro_DoorFrames;
+        }
+        foreach (var item in Window_Frames)
+        {
+            item.materials = Retro_WindowFrames;
+        }
+        foreach (var item in Bathroom_Window_Frames)
+        {
+            item.materials = Retro_BathroomWindowFrames;
+        }
+
+    }
     public void Wing_A_FlatNo_02_Type01_Retro()
     {
         Props_Retro.SetActive(true);
@@ -743,7 +815,31 @@ public class MaterialManager : MonoBehaviour {
 
 
     //Wing_A_FlatNo_03_Type01
+    public void Wing_A_FlatNo_03_Type01_None()
+    {
+        
+        Roof1.materials = Retro_Roof1;
+        Roof2.materials = Retro_Roof2;
+        Roof3.materials = Retro_Roof3;
+        Roof4.materials = Retro_Roof4;
+        Floor.materials = Retro_Floors;
+        Wall.materials = Retro_Walls;
+        Skirting.materials = Retro_Skirting;
 
+        foreach (var item in Door_Frames)
+        {
+            item.materials = Retro_DoorFrames;
+        }
+        foreach (var item in Window_Frames)
+        {
+            item.materials = Retro_WindowFrames;
+        }
+        foreach (var item in Bathroom_Window_Frames)
+        {
+            item.materials = Retro_BathroomWindowFrames;
+        }
+
+    }
     public void Wing_A_FlatNo_03_Type01_Retro()
     {
         Props_Retro.SetActive(true);
@@ -1043,7 +1139,31 @@ public class MaterialManager : MonoBehaviour {
 
 
     //Wing_A_FlatNo_04_Type01
+    public void Wing_A_FlatNo_04_Type01_None()
+    {
+        
+        Roof1.materials = Retro_Roof1;
+        Roof2.materials = Retro_Roof2;
+        Roof3.materials = Retro_Roof3;
+        Roof4.materials = Retro_Roof4;
+        Floor.materials = Retro_Floors;
+        Wall.materials = Retro_Walls;
+        Skirting.materials = Retro_Skirting;
 
+        foreach (var item in Door_Frames)
+        {
+            item.materials = Retro_DoorFrames;
+        }
+        foreach (var item in Window_Frames)
+        {
+            item.materials = Retro_WindowFrames;
+        }
+        foreach (var item in Bathroom_Window_Frames)
+        {
+            item.materials = Retro_BathroomWindowFrames;
+        }
+
+    }
     public void Wing_A_FlatNo_04_Type01_Retro()
     {
         Props_Retro.SetActive(true);
@@ -1348,7 +1468,31 @@ public class MaterialManager : MonoBehaviour {
     //*******************
 
     //Wing_B_FlatNo_01_Type01
+    public void Wing_B_FlatNo_01_Type01_None()
+    {
+        
+        Roof1.materials = Retro_Roof1;
+        Roof2.materials = Retro_Roof2;
+        Roof3.materials = Retro_Roof3;
+        Roof4.materials = Retro_Roof4;
+        Floor.materials = Retro_Floors;
+        Wall.materials = Retro_Walls;
+        Skirting.materials = Retro_Skirting;
 
+        foreach (var item in Door_Frames)
+        {
+            item.materials = Retro_DoorFrames;
+        }
+        foreach (var item in Window_Frames)
+        {
+            item.materials = Retro_WindowFrames;
+        }
+        foreach (var item in Bathroom_Window_Frames)
+        {
+            item.materials = Retro_BathroomWindowFrames;
+        }
+
+    }
     public void Wing_B_FlatNo_01_Type01_Retro()
     {
         Props_Retro.SetActive(true);
@@ -1647,7 +1791,32 @@ public class MaterialManager : MonoBehaviour {
 
 
     //Wing_B_FlatNo_02_Type01
+    public void Wing_B_FlatNo_02_Type01_None()
+    {
+        
+        Roof1.materials = Retro_Roof1;
+        Roof2.materials = Retro_Roof2;
+        Roof3.materials = Retro_Roof3;
+        Roof4.materials = Retro_Roof4;
+        Roof5.materials = Retro_Roof5;
+        Floor.materials = Retro_Floors;
+        Wall.materials = Retro_Walls;
+        Skirting.materials = Retro_Skirting;
 
+        foreach (var item in Door_Frames)
+        {
+            item.materials = Retro_DoorFrames;
+        }
+        foreach (var item in Window_Frames)
+        {
+            item.materials = Retro_WindowFrames;
+        }
+        foreach (var item in Bathroom_Window_Frames)
+        {
+            item.materials = Retro_BathroomWindowFrames;
+        }
+
+    }
     public void Wing_B_FlatNo_02_Type01_Retro()
     {
         Props_Retro.SetActive(true);
@@ -1853,7 +2022,30 @@ public class MaterialManager : MonoBehaviour {
 
 
     //Wing_B_FlatNo_03_Type01
+    public void Wing_B_FlatNo_03_Type01_None()
+    {
+        Roof1.materials = Retro_Roof1;
+        Roof2.materials = Retro_Roof2;
+        Roof3.materials = Retro_Roof3;
+        Roof4.materials = Retro_Roof4;
+        Floor.materials = Retro_Floors;
+        Wall.materials = Retro_Walls;
+        Skirting.materials = Retro_Skirting;
 
+        foreach (var item in Door_Frames)
+        {
+            item.materials = Retro_DoorFrames;
+        }
+        foreach (var item in Window_Frames)
+        {
+            item.materials = Retro_WindowFrames;
+        }
+        foreach (var item in Bathroom_Window_Frames)
+        {
+            item.materials = Retro_BathroomWindowFrames;
+        }
+
+    }
     public void Wing_B_FlatNo_03_Type01_Retro()
     {
         Props_Retro.SetActive(true);
@@ -2153,7 +2345,30 @@ public class MaterialManager : MonoBehaviour {
 
 
     //Wing_B_FlatNo_04_Type01
+    public void Wing_B_FlatNo_04_Type01_None()
+    {
+        Roof1.materials = Retro_Roof1;
+        Roof2.materials = Retro_Roof2;
+        Roof3.materials = Retro_Roof3;
+        //Roof4.materials = Retro_Roof4;
+        Floor.materials = Retro_Floors;
+        Wall.materials = Retro_Walls;
+        Skirting.materials = Retro_Skirting;
 
+        foreach (var item in Door_Frames)
+        {
+            item.materials = Retro_DoorFrames;
+        }
+        foreach (var item in Window_Frames)
+        {
+            item.materials = Retro_WindowFrames;
+        }
+        foreach (var item in Bathroom_Window_Frames)
+        {
+            item.materials = Retro_BathroomWindowFrames;
+        }
+
+    }
     public void Wing_B_FlatNo_04_Type01_Retro()
     {
         Props_Retro.SetActive(true);

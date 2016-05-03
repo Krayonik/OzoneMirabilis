@@ -25,6 +25,8 @@ public class MatManagerWindow : EditorWindow {
     SerializedProperty Retro_Walls;
     SerializedProperty Retro_Floors;
     SerializedProperty Retro_Skirting;
+    SerializedProperty Retro_ModularWall;
+    SerializedProperty Retro_ModularWallSkirting;
     SerializedProperty Retro_DoorFrames;
     SerializedProperty Retro_WindowFrames;
     SerializedProperty Retro_BathroomWindowFrames;
@@ -37,6 +39,8 @@ public class MatManagerWindow : EditorWindow {
     SerializedProperty Danish_Walls;
     SerializedProperty Danish_Floors;
     SerializedProperty Danish_Skirting;
+    SerializedProperty Danish_ModularWall;
+    SerializedProperty Danish_ModularWallSkirting;
     SerializedProperty Danish_DoorFrames;
     SerializedProperty Danish_WindowFrames;
     SerializedProperty Danish_BathroomWindowFrames;
@@ -49,6 +53,8 @@ public class MatManagerWindow : EditorWindow {
     SerializedProperty Contemp_Walls;
     SerializedProperty Contemp_Floors;
     SerializedProperty Contemp_Skirting;
+    SerializedProperty Contemp_ModularWall;
+    SerializedProperty Contemp_ModularWallSkirting;
     SerializedProperty Contemp_DoorFrames;
     SerializedProperty Contemp_WindowFrames;
     SerializedProperty Contemp_BathroomWindowFrames;
@@ -104,6 +110,8 @@ public class MatManagerWindow : EditorWindow {
         Retro_Walls = serializedObj.FindProperty("Retro_Walls");
         Retro_Floors = serializedObj.FindProperty("Retro_Floors");
         Retro_Skirting = serializedObj.FindProperty("Retro_Skirting");
+        Retro_ModularWall = serializedObj.FindProperty("Retro_ModularWall");
+        Retro_ModularWallSkirting = serializedObj.FindProperty("Retro_ModularWallSkirting");
         Retro_DoorFrames = serializedObj.FindProperty("Retro_DoorFrames");
         Retro_WindowFrames = serializedObj.FindProperty("Retro_WindowFrames");
         Retro_BathroomWindowFrames = serializedObj.FindProperty("Retro_BathroomWindowFrames");
@@ -116,6 +124,8 @@ public class MatManagerWindow : EditorWindow {
         Danish_Walls = serializedObj.FindProperty("Danish_Walls");
         Danish_Floors = serializedObj.FindProperty("Danish_Floors");
         Danish_Skirting = serializedObj.FindProperty("Danish_Skirting");
+        Danish_ModularWall = serializedObj.FindProperty("Danish_ModularWall");
+        Danish_ModularWallSkirting = serializedObj.FindProperty("Danish_ModularWall");
         Danish_DoorFrames = serializedObj.FindProperty("Danish_DoorFrames");
         Danish_WindowFrames = serializedObj.FindProperty("Danish_WindowFrames");
         Danish_BathroomWindowFrames = serializedObj.FindProperty("Danish_BathroomWindowFrames");
@@ -129,6 +139,8 @@ public class MatManagerWindow : EditorWindow {
         Contemp_Walls = serializedObj.FindProperty("Contemp_Walls");
         Contemp_Floors = serializedObj.FindProperty("Contemp_Floors");
         Contemp_Skirting = serializedObj.FindProperty("Contemp_Skirting");
+        Contemp_ModularWall = serializedObj.FindProperty("Contemp_ModularWall");
+        Contemp_ModularWallSkirting = serializedObj.FindProperty("Contemp_ModularWall");
         Contemp_DoorFrames = serializedObj.FindProperty("Contemp_DoorFrames");
         Contemp_WindowFrames = serializedObj.FindProperty("Contemp_WindowFrames");
         Contemp_BathroomWindowFrames = serializedObj.FindProperty("Contemp_BathroomWindowFrames");
@@ -138,10 +150,10 @@ public class MatManagerWindow : EditorWindow {
     void OnGUI () 
     {
 
-        //if(serializedObj.targetObject ==  null)
-        //{
-        //    OnEnable();
-        //}
+        if(serializedObj.targetObject ==  null)
+        {
+            OnEnable();
+        }
 
         serializedObj.Update();
 
@@ -167,6 +179,7 @@ public class MatManagerWindow : EditorWindow {
         //MainMat_bool = EditorGUILayout.BeginToggleGroup("Main Materials", MainMat_bool);
         EditorGUILayout.BeginToggleGroup("Main Materials", true);
 
+        EditorGUILayout.TextArea("Common References :");
         myTarget.Roof1 = (Renderer) EditorGUILayout.ObjectField("Roof 1 :",myTarget.Roof1, typeof(Renderer), true);
         myTarget.Roof2 = (Renderer) EditorGUILayout.ObjectField("Roof 2 :", myTarget.Roof2, typeof(Renderer), true);
         myTarget.Roof3 = (Renderer) EditorGUILayout.ObjectField("Roof 3 :", myTarget.Roof3, typeof(Renderer), true);
@@ -175,6 +188,12 @@ public class MatManagerWindow : EditorWindow {
         myTarget.Wall = (Renderer)EditorGUILayout.ObjectField("Wall :", myTarget.Wall, typeof(Renderer), true);
         myTarget.Floor = (Renderer)EditorGUILayout.ObjectField("Floor :", myTarget.Floor, typeof(Renderer), true);
         myTarget.Skirting = (Renderer)EditorGUILayout.ObjectField("Skirting :", myTarget.Skirting, typeof(Renderer), true);
+        EditorGUILayout.TextArea("Modular References :");
+        myTarget.ModularWall1 = (Renderer)EditorGUILayout.ObjectField("Modular Wall 1 :", myTarget.ModularWall1, typeof(Renderer), true);
+        myTarget.ModularWallSkirting1 = (Renderer)EditorGUILayout.ObjectField("Modular Wall Skirting 1 :", myTarget.ModularWallSkirting1, typeof(Renderer), true);
+        myTarget.ModularWall2 = (Renderer)EditorGUILayout.ObjectField("Modular Wall 2 :", myTarget.ModularWall2, typeof(Renderer), true);
+        myTarget.ModularWallSkirting2 = (Renderer)EditorGUILayout.ObjectField("Modular Wall Skirting 1 :", myTarget.ModularWallSkirting2, typeof(Renderer), true);
+        EditorGUILayout.TextArea("Frame References :");
         EditorGUILayout.PropertyField(Door_Frames, new GUIContent("Door Frames : "), true);
         EditorGUILayout.PropertyField(Window_Frames, new GUIContent("Window Frames : "), true);
         EditorGUILayout.PropertyField(Bathroom_Window_Frames, new GUIContent("Bathroom Window Frames : "), true);
@@ -201,6 +220,10 @@ public class MatManagerWindow : EditorWindow {
         EditorGUILayout.PropertyField(Retro_Floors, new GUIContent("Retro Floors : "), true);
 
         EditorGUILayout.PropertyField(Retro_Skirting, new GUIContent("Retro Skirting : "), true);
+
+        EditorGUILayout.PropertyField(Retro_ModularWall, new GUIContent("Retro Modular Wall : "), true);
+
+        EditorGUILayout.PropertyField(Retro_ModularWallSkirting, new GUIContent("Retro Modular Wall Skirting : "), true);
 
         EditorGUILayout.PropertyField(Retro_DoorFrames, new GUIContent("Retro Door Frames : "), true);
 
@@ -234,6 +257,10 @@ public class MatManagerWindow : EditorWindow {
 
         EditorGUILayout.PropertyField(Danish_Skirting, new GUIContent("Danish Skirting : "), true);
 
+        EditorGUILayout.PropertyField(Danish_ModularWall, new GUIContent("Danish Modular Wall : "), true);
+
+        EditorGUILayout.PropertyField(Danish_ModularWallSkirting, new GUIContent("Danish Modular Wall Skirting : "), true);
+
         EditorGUILayout.PropertyField(Danish_DoorFrames, new GUIContent("Danish Door Frames : "), true);
 
         EditorGUILayout.PropertyField(Danish_WindowFrames, new GUIContent("Danish Window Frames : "), true);
@@ -265,6 +292,10 @@ public class MatManagerWindow : EditorWindow {
         EditorGUILayout.PropertyField(Contemp_Floors, new GUIContent("Contemp Floors : "), true);
 
         EditorGUILayout.PropertyField(Contemp_Skirting, new GUIContent("Contemp Skirting : "), true);
+
+        EditorGUILayout.PropertyField(Contemp_ModularWall, new GUIContent("Contemp Modular Wall : "), true);
+
+        EditorGUILayout.PropertyField(Contemp_ModularWallSkirting, new GUIContent("Contemp Modular Wall Skirting : "), true);
 
         EditorGUILayout.PropertyField(Contemp_DoorFrames, new GUIContent("Contemp Door Frames : "), true);
 

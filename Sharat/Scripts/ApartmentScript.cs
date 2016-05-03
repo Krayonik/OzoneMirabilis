@@ -9,14 +9,35 @@ public class ApartmentScript : MonoBehaviour {
     public GameObject Roof;
     public GameObject _target;
 
+    public GameObject _FloorPlan;
+    public GameObject _FlatNumber;
+    public GameObject _Lights;
+
 	// Use this for initialization
 	void Start () {
 
         _target = this.gameObject;
 
-        FlyMode();
-
+        //FlyMode();
+        _FloorPlan = _target.transform.parent.FindChild("WorldCanvas").transform.FindChild("FloorPlan").gameObject;
+        _FlatNumber = _target.transform.parent.FindChild("WorldCanvas").transform.FindChild("FlatNumber").gameObject;
+        _Lights = _target.transform.parent.FindChild("Lights").gameObject;
+        ActivateFloorPlan();
 	}
+
+    public void ActivateFloorPlan()
+    {
+        _FloorPlan.SetActive(false);
+        _FlatNumber.SetActive(true);
+        _Lights.SetActive(false);
+    }
+    public void ActivateFlatNumber()
+    {
+        _FloorPlan.SetActive(true);
+        _FlatNumber.SetActive(false);
+        _Lights.SetActive(true);
+    }
+
 	
     public void WalkMode()
     {
@@ -43,3 +64,4 @@ public class ApartmentScript : MonoBehaviour {
 	
 	}
 }
+
